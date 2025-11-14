@@ -76,3 +76,7 @@ section[id] {
 .w-65 {
   width: 65%;
 }
+
+.navbar-brand img {
+  filter: invert(1);
+}
