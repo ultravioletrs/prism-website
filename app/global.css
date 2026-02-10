@@ -9,6 +9,8 @@
 
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-brand-secondary: hsl(var(--brand-secondary));
+  --color-brand-secondary-foreground: hsl(var(--brand-secondary-foreground));
 }
 
 @layer base {
@@ -33,6 +35,8 @@
     --input: 0 0% 89.8%;
     --ring: 192 65% 8%;
     --radius: 0.5rem;
+    --brand-secondary: 262 83% 58%;
+    --brand-secondary-foreground: 0 0% 98%;
   }
 
   .dark {
@@ -55,6 +59,8 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 175 70% 50%;
+    --brand-secondary: 262 83% 64%;
+    --brand-secondary-foreground: 0 0% 98%;
   }
 }
 

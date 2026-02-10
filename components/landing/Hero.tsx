@@ -8,7 +8,7 @@ export function Hero() {
     return (
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background text-foreground pt-32 md:pt-0">
             {/* Background Gradient */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background to-background z-0" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-secondary/20 via-background to-background z-0" />
 
             <div className="container relative z-10 px-4 md:px-6">
                 <div className="flex flex-col items-center text-center space-y-8">
@@ -17,7 +17,7 @@ export function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary backdrop-blur-sm"
+                        className="inline-flex items-center rounded-full border border-brand-secondary/30 bg-brand-secondary/10 px-3 py-1 text-sm font-medium text-brand-secondary backdrop-blur-sm"
                     >
                         <Shield className="mr-2 h-4 w-4" />
                         Confidential Computing Platform
@@ -27,10 +27,10 @@ export function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }}
-                        className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight font-heading bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70"
+                        className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight font-heading bg-clip-text text-transparent bg-gradient-to-br from-foreground via-foreground to-brand-secondary"
                     >
                         Secure AI Collaboration <br className="hidden md:block" />
-                        in <span className="text-primary">Trusted Environments</span>
+                        in <span className="text-brand-secondary">Trusted Environments</span>
                     </motion.h1>
 
                     <motion.p

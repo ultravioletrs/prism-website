@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import prismArchitecture from '@/public/img/prism-architecture.png';
+import prismCocos from '@/public/img/prism-cocos.png';
 
 export function Architecture() {
     return (
@@ -11,12 +13,12 @@ export function Architecture() {
                     </p>
                 </div>
 
-                <div className="relative aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border border-border/50 mb-20 bg-background dark:bg-white/95">
+                <div className="relative w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border border-brand-secondary/20 mb-20 bg-background dark:bg-white/95">
                     <Image
-                        src="/img/prism-architecture.png"
+                        src={prismArchitecture}
                         alt="Prism AI Architecture Overview"
-                        fill
-                        className="object-cover"
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto' }}
                     />
                 </div>
 
@@ -47,19 +49,19 @@ export function Architecture() {
                         <h2 className="text-3xl font-bold tracking-tight">Open-Source Core with Cocos AI</h2>
                         <div className="space-y-4 text-muted-foreground">
                             <p>
-                                Core components including the TEE Manager and In-Enclave Agent are part of the open-source <a href="https://github.com/ultravioletrs/cocos" className="text-primary hover:underline font-medium">Cocos AI project</a>.
+                                Core components including the TEE Manager and In-Enclave Agent are part of the open-source <a href="https://github.com/ultravioletrs/cocos" className="text-brand-secondary hover:underline font-medium">Cocos AI project</a>.
                             </p>
                             <p>
                                 This ensures transparency, security, and community-driven innovation. Every computational node benefits from robust, tested TEE orchestration.
                             </p>
                         </div>
                     </div>
-                    <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-xl border border-border/50 bg-background dark:bg-white/95">
+                    <div className="relative w-full rounded-xl overflow-hidden shadow-xl border border-border/50 bg-background dark:bg-white/95">
                         <Image
-                            src="/img/prism-cocos.png"
+                            src={prismCocos}
                             alt="Open-source Core with Cocos AI"
-                            fill
-                            className="object-cover"
+                            sizes="100vw"
+                            style={{ width: '100%', height: 'auto' }}
                         />
                     </div>
                 </div>

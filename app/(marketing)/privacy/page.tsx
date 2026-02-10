@@ -11,7 +11,7 @@ export default function PrivacyPage() {
 
             <div className="space-y-8 text-foreground/90">
                 <p>
-                    This Privacy Policy explains how Ultraviolet ("we," "us," or "our") collects, uses, and protects your personal data when you use the Prism AI SaaS platform ("Platform"). We are committed to complying with the General Data Protection Regulation (GDPR) and other applicable privacy laws.
+                    This Privacy Policy explains how Ultraviolet (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and protects your personal data when you use the Prism AI SaaS platform (&quot;Platform&quot;). We are committed to complying with the General Data Protection Regulation (GDPR) and other applicable privacy laws.
                 </p>
 
                 <hr className="border-border" />
@@ -336,7 +336,7 @@ export default function PrivacyPage() {
                         </div>
 
                         <div>
-                            <h3 className="text-lg font-semibold mb-2">9.3 Right to Erasure / "Right to be Forgotten" (Article 17)</h3>
+                            <h3 className="text-lg font-semibold mb-2">9.3 Right to Erasure / &quot;Right to be Forgotten&quot; (Article 17)</h3>
                             <p>Request deletion of your personal data when it is no longer necessary or if you withdraw consent.</p>
                         </div>
 
@@ -400,7 +400,7 @@ export default function PrivacyPage() {
                         We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make significant changes, we will:
                     </p>
                     <ul className="list-disc pl-5 space-y-1">
-                        <li>Update the "Effective Date" at the top of this policy</li>
+                        <li>Update the &quot;Effective Date&quot; at the top of this policy</li>
                         <li>Notify you via email to your registered email address</li>
                         <li>Display a prominent notice on the Platform</li>
                         <li>Request your consent if required by applicable law</li>

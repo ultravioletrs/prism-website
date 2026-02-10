@@ -1,11 +1,16 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
+import prismUi from '@/public/img/prism-ui.png';
+import policies from '@/public/img/policies.png';
+import backends from '@/public/img/backends.png';
+import runtimes from '@/public/img/runtimes.png';
+import logs from '@/public/img/logs.png';
 import { cn } from '@/lib/utils';
 import { Check } from 'lucide-react';
 
 interface FeatureSectionProps {
     title: string;
     children: React.ReactNode;
-    image: string;
+    image: StaticImageData;
     imageAlt: string;
     reversed?: boolean;
 }
@@ -21,12 +26,12 @@ function FeatureSection({ title, children, image, imageAlt, reversed = false }: 
                             {children}
                         </div>
                     </div>
-                    <div className={cn("relative aspect-video w-full rounded-xl overflow-hidden shadow-xl border border-border/50 bg-background dark:bg-white/95", reversed ? "md:col-start-1" : "")}>
+                    <div className={cn("relative w-full rounded-xl overflow-hidden shadow-xl border border-border/50 bg-background dark:bg-white/95", reversed ? "md:col-start-1" : "")}>
                         <Image
                             src={image}
                             alt={imageAlt}
-                            fill
-                            className="object-cover"
+                            sizes="100vw"
+                            style={{ width: '100%', height: 'auto' }}
                         />
                     </div>
                 </div>
@@ -41,7 +46,7 @@ export function DetailedFeatures() {
             {/* Intuitive UI */}
             <FeatureSection
                 title="Intuitive User Interface"
-                image="/img/prism-ui.png"
+                image={prismUi}
                 imageAlt="Prism AI User Interface"
                 reversed={true}
             >
@@ -56,11 +61,11 @@ export function DetailedFeatures() {
             {/* Security */}
             <FeatureSection
                 title="Multi-tenant And Strong Security"
-                image="/img/policies.png"
+                image={policies}
                 imageAlt="Security Policies"
             >
                 <p>
-                    Prism AI is built with multi-tenancy and robust security in mind, ensuring that each tenant's data and computations remain isolated and protected.
+                    Prism AI is built with multi-tenancy and robust security in mind, ensuring that each tenant&apos;s data and computations remain isolated and protected.
                 </p>
                 <p>
                     With advanced security features such as fine-grained access control, encryption at rest and in transit, and rigorous authentication mechanisms, Prism AI guarantees the confidentiality and integrity of all data and computations.
@@ -70,12 +75,12 @@ export function DetailedFeatures() {
             {/* BYO Backend */}
             <FeatureSection
                 title="Bring Your Own Confidential Computing Backend"
-                image="/img/backends.png"
+                image={backends}
                 imageAlt="Backend Infrastructure"
                 reversed={true}
             >
                 <p>
-                    Prism AI is designed with a flexible architecture that supports multiple computational backends, adhering to a "bring your own backend" approach. This flexibility allows the integration of any TEE-capable node into the infrastructure.
+                    Prism AI is designed with a flexible architecture that supports multiple computational backends, adhering to a &quot;bring your own backend&quot; approach. This flexibility allows the integration of any TEE-capable node into the infrastructure.
                 </p>
                 <p>
                     Through seamless integration with the open-source Hardware Abstraction Layer (HAL) provided by the Cocos AI platform, Prism AI enables efficient and secure execution of confidential workloads across various environments.
@@ -85,14 +90,14 @@ export function DetailedFeatures() {
             {/* Runtimes */}
             <FeatureSection
                 title="Multiple Workload Runtime Support"
-                image="/img/runtimes.png"
+                image={runtimes}
                 imageAlt="Supported Runtimes"
             >
                 <p>
                     Prism AI is designed to support a wide range of computational workloads within secure enclaves, enhancing its versatility and adaptability.
                 </p>
                 <ul className="space-y-2 mt-4">
-                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span><strong>Python AI Algorithms:</strong> Leverage Python's extensive ecosystem for ML and data science.</span></li>
+                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span><strong>Python AI Algorithms:</strong> Leverage Python&apos;s extensive ecosystem for ML and data science.</span></li>
                     <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span><strong>Docker Containers:</strong> Deploy containerized applications with all dependencies.</span></li>
                     <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span><strong>WebAssembly (Wasm):</strong> Execute lightweight, high-performance code efficiently.</span></li>
                     <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span><strong>ELF Binaries:</strong> Run executable Linux binaries and custom applications.</span></li>
@@ -102,7 +107,7 @@ export function DetailedFeatures() {
             {/* Logs */}
             <FeatureSection
                 title="Enclave Monitoring, Events, and Logs"
-                image="/img/logs.png"
+                image={logs}
                 imageAlt="Logging and Monitoring"
                 reversed={true}
             >

@@ -16,10 +16,10 @@ export default function TermsPage() {
                 <section>
                     <h2 className="text-2xl font-bold mb-4">1. INTRODUCTION</h2>
                     <p className="mb-4">
-                        These Terms of Service ("Terms") govern your access to and use of the Prism AI Platform ("Platform" or "Services"), a software-as-a-service offering operated by Ultraviolet ("Ultraviolet," "Company," "we," "us," or "our").
+                        These Terms of Service (&quot;Terms&quot;) govern your access to and use of the Prism AI Platform (&quot;Platform&quot; or &quot;Services&quot;), a software-as-a-service offering operated by Ultraviolet (&quot;Ultraviolet,&quot; &quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
                     </p>
                     <p className="mb-4">
-                        By creating an account, accessing, or using the Platform, you ("Customer," "you," or "your") agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you may not use our Services.
+                        By creating an account, accessing, or using the Platform, you (&quot;Customer,&quot; &quot;you,&quot; or &quot;your&quot;) agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you may not use our Services.
                     </p>
                     <p className="mb-4">
                         <strong>Effective Date:</strong> These Terms are effective as of August 6, 2025.
@@ -34,15 +34,15 @@ export default function TermsPage() {
                 <section>
                     <h2 className="text-2xl font-bold mb-4 mt-8">2. DEFINITIONS</h2>
                     <ul className="list-disc pl-5 space-y-1">
-                        <li><strong>"Account"</strong> means your registered account on the Platform.</li>
-                        <li><strong>"Customer"</strong> means the company or individual who registers for an account to use the Platform.</li>
-                        <li><strong>"Customer Data"</strong> means all data, content, and information uploaded, transmitted, or processed through the Platform by you.</li>
-                        <li><strong>"Documentation"</strong> means the user guides, technical manuals, and API documentation provided by us.</li>
-                        <li><strong>"Intellectual Property Rights"</strong> means all intellectual property rights including patents, copyrights, trademarks, and trade secrets.</li>
-                        <li><strong>"Platform"</strong> means the Prism AI Platform and all related services, software, and infrastructure.</li>
-                        <li><strong>"Services"</strong> means the hosted Prism AI Platform and associated features provided by Ultraviolet.</li>
-                        <li><strong>"Subscription Plan"</strong> means the selected monthly or yearly paid offering with specified limits and features.</li>
-                        <li><strong>"User"</strong> means any person authorized by the Customer to access the Platform.</li>
+                        <li><strong>&quot;Account&quot;</strong> means your registered account on the Platform.</li>
+                        <li><strong>&quot;Customer&quot;</strong> means the company or individual who registers for an account to use the Platform.</li>
+                        <li><strong>&quot;Customer Data&quot;</strong> means all data, content, and information uploaded, transmitted, or processed through the Platform by you.</li>
+                        <li><strong>&quot;Documentation&quot;</strong> means the user guides, technical manuals, and API documentation provided by us.</li>
+                        <li><strong>&quot;Intellectual Property Rights&quot;</strong> means all intellectual property rights including patents, copyrights, trademarks, and trade secrets.</li>
+                        <li><strong>&quot;Platform&quot;</strong> means the Prism AI Platform and all related services, software, and infrastructure.</li>
+                        <li><strong>&quot;Services&quot;</strong> means the hosted Prism AI Platform and associated features provided by Ultraviolet.</li>
+                        <li><strong>&quot;Subscription Plan&quot;</strong> means the selected monthly or yearly paid offering with specified limits and features.</li>
+                        <li><strong>&quot;User&quot;</strong> means any person authorized by the Customer to access the Platform.</li>
                     </ul>
                 </section>
 
@@ -90,7 +90,7 @@ export default function TermsPage() {
                                 <li>Circumvent or attempt to circumvent usage limits, security controls, or access restrictions;</li>
                                 <li>Use the Platform to develop competing products or services;</li>
                                 <li>Access the Platform through automated means except through our official APIs;</li>
-                                <li>Interfere with or disrupt the Platform's operation or infrastructure.</li>
+                                <li>Interfere with or disrupt the Platform&apos;s operation or infrastructure.</li>
                             </ul>
                         </div>
 
@@ -121,7 +121,7 @@ export default function TermsPage() {
                                 <li>Fees are charged in advance on a recurring basis (monthly or annually) according to your billing cycle;</li>
                                 <li>All fees are exclusive of applicable taxes, which you are responsible for;</li>
                                 <li>Fees are non-refundable except as required by applicable law, as specified in these Terms, or as determined by us in cases of fraud, mistakes, or Terms violations;</li>
-                                <li>We reserve the right to change our pricing with 30 days' notice.</li>
+                                <li>We reserve the right to change our pricing with 30 days&apos; notice.</li>
                             </ul>
                         </div>
 
@@ -205,8 +205,8 @@ export default function TermsPage() {
                                 <li>Violate any applicable laws, regulations, or third-party rights;</li>
                                 <li>Send spam, unsolicited communications, or malicious content;</li>
                                 <li>Upload or transmit viruses, malware, or other harmful code;</li>
-                                <li>Attempt to gain unauthorized access to our systems or other users' accounts;</li>
-                                <li>Interfere with or disrupt the Platform's operation or infrastructure;</li>
+                                <li>Attempt to gain unauthorized access to our systems or other users&apos; accounts;</li>
+                                <li>Interfere with or disrupt the Platform&apos;s operation or infrastructure;</li>
                                 <li>Use the Platform for cryptocurrency mining or similar resource-intensive activities;</li>
                                 <li>Engage in any activity that could harm our reputation or business;</li>
                                 <li>Violate the privacy or rights of others;</li>
@@ -351,7 +351,7 @@ export default function TermsPage() {
                         <div>
                             <h3 className="text-lg font-semibold mb-2 mt-4">12.1 Disclaimer of Warranties</h3>
                             <p className="mb-4">
-                                THE PLATFORM IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:
+                                THE PLATFORM IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:
                             </p>
                             <ul className="list-disc pl-5 space-y-1">
                                 <li>MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT;</li>
@@ -452,9 +452,9 @@ export default function TermsPage() {
                                 We reserve the right to modify these Terms at any time. When we make changes, we will:
                             </p>
                             <ul className="list-disc pl-5 space-y-1">
-                                <li>Update the "Last Updated" date at the top of these Terms;</li>
+                                <li>Update the &quot;Last Updated&quot; date at the top of these Terms;</li>
                                 <li>Notify you via email or through the Platform;</li>
-                                <li>Provide at least 30 days' notice for material changes.</li>
+                                <li>Provide at least 30 days&apos; notice for material changes.</li>
                             </ul>
                         </div>
 

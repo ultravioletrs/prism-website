@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Menu, X, Github } from 'lucide-react';
+import { ModeToggle } from '@/components/mode-toggle';
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -43,6 +44,7 @@ export function Navbar() {
                     >
                         Try Prism
                     </Link>
+                    <ModeToggle />
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -81,6 +83,9 @@ export function Navbar() {
                         >
                             Try Prism
                         </Link>
+                        <div className="flex justify-center pt-4">
+                            <ModeToggle />
+                        </div>
                     </div>
                 </div>
             )}
