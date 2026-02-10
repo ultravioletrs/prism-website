@@ -1,4 +1,4 @@
-import { getCurrentYear } from "@site/lib/utils";
+
 
 const navigationLinks = [
   { label: "Features", href: "/#features" },
@@ -63,7 +63,7 @@ export const FooterData = {
     buttonText: "Subscribe",
   },
   footerCopyright: {
-    year: getCurrentYear(),
+    year: new Date().getFullYear(),
     rights: "All rights reserved.",
     policies: [
       { label: "Privacy Policy", href: "#" },
