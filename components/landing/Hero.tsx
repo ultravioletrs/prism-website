@@ -81,7 +81,7 @@ export function Hero() {
                         <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
                             <Cpu className="h-10 w-10 text-primary mb-4" />
                             <h3 className="font-bold text-lg mb-2">Hardware-Backed</h3>
-                            <p className="text-muted-foreground text-sm">Leverages Intel TDX, AMD SEV-SNP, and AWS Nitro Enclaves.</p>
+                            <p className="text-muted-foreground text-sm">Leverages Intel TDX and AMD SEV-SNP</p>
                         </div>
                         <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
                             <Shield className="h-10 w-10 text-primary mb-4" />
