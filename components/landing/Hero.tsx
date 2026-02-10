@@ -6,7 +6,7 @@ import { ArrowRight, Shield, Lock, Cpu } from 'lucide-react';
 
 export function Hero() {
     return (
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background text-foreground">
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background text-foreground pt-32 md:pt-0">
             {/* Background Gradient */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background to-background z-0" />
 

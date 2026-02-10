@@ -26,7 +26,7 @@ function FeatureSection({ title, children, image, imageAlt, reversed = false }: 
                             src={image}
                             alt={imageAlt}
                             fill
-                            className="object-contain p-4"
+                            className="object-cover"
                         />
                     </div>
                 </div>

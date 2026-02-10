@@ -56,7 +56,7 @@ export function Navbar() {
 
             {/* Mobile Nav */}
             {isOpen && (
-                <div className="md:hidden border-t p-4 bg-background">
+                <div className="fixed inset-0 top-16 z-50 w-full bg-background p-4 md:hidden overflow-y-auto">
                     <div className="flex flex-col space-y-4">
                         <Link href="/#about" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
                             ABOUT

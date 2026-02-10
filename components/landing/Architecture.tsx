@@ -16,7 +16,7 @@ export function Architecture() {
                         src="/img/prism-architecture.png"
                         alt="Prism AI Architecture Overview"
                         fill
-                        className="object-contain p-4"
+                        className="object-cover"
                     />
                 </div>
 
@@ -59,7 +59,7 @@ export function Architecture() {
                             src="/img/prism-cocos.png"
                             alt="Open-source Core with Cocos AI"
                             fill
-                            className="object-contain p-4"
+                            className="object-cover"
                         />
                     </div>
                 </div>
