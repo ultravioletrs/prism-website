@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { cn } from '@/lib/cn';
 
 const partners = [
     { name: 'Target', logo: '/img/logos/target.png' },
@@ -32,7 +33,10 @@ export function Partners() {
                                 alt={`${partner.name} logo`}
                                 width={160}
                                 height={80}
-                                className="object-contain max-h-12 w-auto"
+                                className={cn(
+                                    "object-contain max-h-12 w-auto",
+                                    (partner.name === 'Greennet' || partner.name === 'TNO') && "dark:invert"
+                                )}
                             />
                         </div>
                     ))}
