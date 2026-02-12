@@ -2,15 +2,20 @@ import Image from 'next/image';
 import { cn } from '@/lib/cn';
 
 const partners = [
-    { name: 'Target', logo: '/img/logos/target.png' },
-    { name: 'Greennet', logo: '/img/logos/greennet.png' },
+    { name: 'IF', logo: '/img/logos/if.png' },
+    { name: 'ETF', logo: '/img/logos/etf.png' },
     { name: 'European Commission', logo: '/img/logos/eu.png' },
     { name: 'Telefónica', logo: '/img/logos/telefonica.png' },
-    { name: 'TU Eindhoven', logo: '/img/logos/tue.png' },
-    { name: 'TNO', logo: '/img/logos/tno.png' },
-    { name: 'Intel PARC', logo: '/img/logos/parc.png' },
     { name: 'VTT', logo: '/img/logos/vtt.png' },
-    { name: 'ETF', logo: '/img/logos/etf.png' },
+    { name: 'Fujitsu', logo: '/img/logos/fujitsu.png' },
+    { name: 'Fraunhofer', logo: '/img/logos/fraunhofer.png' },
+    { name: 'TNO', logo: '/img/logos/tno.png' },
+    { name: 'Ericsson', logo: '/img/logos/ericsson.png' },
+    { name: 'Nokia', logo: '/img/logos/nokia.png' },
+    { name: 'Inserm', logo: '/img/logos/inserm.png' },
+    { name: 'TU Eindhoven', logo: '/img/logos/tue.png' },
+    { name: 'Thales', logo: '/img/logos/thales.png' },
+    { name: 'Imdea', logo: '/img/logos/imdea.svg' },
     { name: 'Linux Foundation', logo: '/img/logos/lf.png' },
 ];
 
@@ -35,7 +40,7 @@ export function Partners() {
                                 height={80}
                                 className={cn(
                                     "object-contain max-h-12 w-auto",
-                                    (partner.name === 'Greennet' || partner.name === 'TNO') && "dark:invert"
+                                    (partner.name === 'IF' || partner.name === 'TNO') && "dark:invert"
                                 )}
                             />
                         </div>
