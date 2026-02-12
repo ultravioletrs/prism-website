@@ -30,7 +30,7 @@ export function Partners() {
                     </p>
                 </div>
 
-                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 grayscale opacity-70 dark:opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
                     {partners.map((partner) => (
                         <div key={partner.name} className="flex items-center justify-center p-4 h-20 w-32 md:w-40">
                             <Image
@@ -40,7 +40,7 @@ export function Partners() {
                                 height={80}
                                 className={cn(
                                     "object-contain max-h-12 w-auto",
-                                    (partner.name === 'IF' || partner.name === 'TNO') && "dark:invert"
+                                    partner.name !== 'VTT' && partner.name !== 'TU Eindhoven' && "dark:invert"
                                 )}
                             />
                         </div>
