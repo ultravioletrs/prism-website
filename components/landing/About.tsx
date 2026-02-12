@@ -10,7 +10,7 @@ export function About() {
                         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
                             <Image
                                 src="/img/prism-concept.png"
-                                alt="Prism AI Architecture"
+                                alt="Prism AI Concept Overview"
                                 fill
                                 className="object-contain p-8"
                             />

@@ -5,7 +5,8 @@ import backends from '@/public/img/backends.png';
 import runtimes from '@/public/img/runtimes.png';
 import logs from '@/public/img/logs.png';
 import { cn } from '@/lib/utils';
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 interface FeatureSectionProps {
     title: string;
@@ -13,9 +14,11 @@ interface FeatureSectionProps {
     image: StaticImageData;
     imageAlt: string;
     reversed?: boolean;
+    ctaText?: string;
+    ctaHref?: string;
 }
 
-function FeatureSection({ title, children, image, imageAlt, reversed = false }: FeatureSectionProps) {
+function FeatureSection({ title, children, image, imageAlt, reversed = false, ctaText, ctaHref }: FeatureSectionProps) {
     return (
         <div className={cn("py-20", reversed ? "bg-muted/30" : "bg-background")}>
             <div className="container px-4 md:px-6">
@@ -25,6 +28,18 @@ function FeatureSection({ title, children, image, imageAlt, reversed = false }: 
                         <div className="text-muted-foreground text-lg leading-relaxed space-y-4">
                             {children}
                         </div>
+                        {ctaText && ctaHref && (
+                            <div className="pt-4">
+                                <Link
+                                    href={ctaHref}
+                                    {...(ctaHref.startsWith('http') ? { target: "_blank" } : {})}
+                                    className="inline-flex items-center text-brand-secondary font-semibold hover:underline"
+                                >
+                                    {ctaText}
+                                    <ArrowRight className="ml-2 h-4 w-4" />
+                                </Link>
+                            </div>
+                        )}
                     </div>
                     <div className={cn("relative w-full rounded-xl overflow-hidden shadow-xl border border-border/50 bg-background dark:bg-white/95", reversed ? "md:col-start-1" : "")}>
                         <Image
@@ -49,12 +64,11 @@ export function DetailedFeatures() {
                 image={prismUi}
                 imageAlt="Prism AI User Interface"
                 reversed={true}
+                ctaText="Try Prism"
+                ctaHref="https://cloud.prism.ultraviolet.rs"
             >
                 <p>
-                    Prism AI features an intuitive user interface designed to simplify the management and orchestration of confidential workloads. The UI is crafted to enhance user experience, providing seamless navigation, easy configuration, and real-time monitoring of computational tasks.
-                </p>
-                <p>
-                    With a user-centric design, Prism AI offering comprehensive controls and visual aids, enables users to effortlessly set up, monitor, and manage secure computations.
+                    Simplify the management of confidential workloads with an intuitive interface. Navigate, configure, and monitor secure computations in real-time with ease.
                 </p>
             </FeatureSection>
 
@@ -63,12 +77,11 @@ export function DetailedFeatures() {
                 title="Multi-tenant And Strong Security"
                 image={policies}
                 imageAlt="Security Policies"
+                ctaText="Learn more"
+                ctaHref="/docs"
             >
                 <p>
-                    Prism AI is built with multi-tenancy and robust security in mind, ensuring that each tenant&apos;s data and computations remain isolated and protected.
-                </p>
-                <p>
-                    With advanced security features such as fine-grained access control, encryption at rest and in transit, and rigorous authentication mechanisms, Prism AI guarantees the confidentiality and integrity of all data and computations.
+                    Secure multi-tenancy ensures complete isolation of data and workloads. Benefit from fine-grained access control, end-to-end encryption, and rigorous authentication.
                 </p>
             </FeatureSection>
 
@@ -78,12 +91,11 @@ export function DetailedFeatures() {
                 image={backends}
                 imageAlt="Backend Infrastructure"
                 reversed={true}
+                ctaText="Learn more"
+                ctaHref="/docs"
             >
                 <p>
-                    Prism AI is designed with a flexible architecture that supports multiple computational backends, adhering to a &quot;bring your own backend&quot; approach. This flexibility allows the integration of any TEE-capable node into the infrastructure.
-                </p>
-                <p>
-                    Through seamless integration with the open-source Hardware Abstraction Layer (HAL) provided by the Cocos AI platform, Prism AI enables efficient and secure execution of confidential workloads across various environments.
+                    Flexible architecture supports any TEE-capable node, allowing you to bring your own backend. Seamless integration with our open-source HAL ensures secure execution across environments.
                 </p>
             </FeatureSection>
 
@@ -92,15 +104,17 @@ export function DetailedFeatures() {
                 title="Multiple Workload Runtime Support"
                 image={runtimes}
                 imageAlt="Supported Runtimes"
+                ctaText="Try Prism"
+                ctaHref="https://cloud.prism.ultraviolet.rs"
             >
                 <p>
-                    Prism AI is designed to support a wide range of computational workloads within secure enclaves, enhancing its versatility and adaptability.
+                    Execute a wide range of computational workloads within secure enclaves, from Python algorithms to containerized applications.
                 </p>
-                <ul className="space-y-2 mt-4">
-                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span><strong>Python AI Algorithms:</strong> Leverage Python&apos;s extensive ecosystem for ML and data science.</span></li>
-                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span><strong>Docker Containers:</strong> Deploy containerized applications with all dependencies.</span></li>
-                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span><strong>WebAssembly (Wasm):</strong> Execute lightweight, high-performance code efficiently.</span></li>
-                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span><strong>ELF Binaries:</strong> Run executable Linux binaries and custom applications.</span></li>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4">
+                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span className="text-sm"><strong>Python AI Algorithms</strong></span></li>
+                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span className="text-sm"><strong>Docker Containers</strong></span></li>
+                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span className="text-sm"><strong>WebAssembly (Wasm)</strong></span></li>
+                    <li className="flex gap-2 items-start"><Check className="h-5 w-5 text-primary shrink-0 mt-0.5" /> <span className="text-sm"><strong>ELF Binaries</strong></span></li>
                 </ul>
             </FeatureSection>
 
@@ -110,12 +124,11 @@ export function DetailedFeatures() {
                 image={logs}
                 imageAlt="Logging and Monitoring"
                 reversed={true}
+                ctaText="Learn more"
+                ctaHref="/docs"
             >
                 <p>
-                    Prism AI offers comprehensive monitoring, event tracking, and logging capabilities to ensure the security and integrity of computations within secure enclaves.
-                </p>
-                <p>
-                    The platform continuously monitors the health and performance of enclaves, providing real-time insights. Additionally, Prism AI generates detailed event logs, capturing significant activities for audit purposes and compliance.
+                    Gain real-time insights into enclave health and performance. Comprehensive event tracking and detailed logs ensure auditability and compliance for all activities.
                 </p>
             </FeatureSection>
         </section>

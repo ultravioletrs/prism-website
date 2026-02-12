@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Footer() {
     return (
@@ -6,7 +7,15 @@ export function Footer() {
             <div className="container px-4 md:px-6">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="md:col-span-1">
-                        <h3 className="font-bold text-lg mb-4">Ultraviolet</h3>
+                        <Link href="https://www.ultraviolet.rs/" target="_blank" rel="noopener noreferrer" className="inline-block mb-4">
+                            <Image
+                                src="/img/ultraviolet-logo.svg"
+                                alt="Ultraviolet"
+                                width={160}
+                                height={40}
+                                className="h-10 w-auto invert dark:invert-0"
+                            />
+                        </Link>
                         <p className="text-muted-foreground">
                             Specializing in confidential computing, cloud security, AI/ML, and secure data sharing.
                         </p>
@@ -23,15 +32,6 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="font-bold text-lg mb-4">Legal</h3>
-                        <ul className="space-y-2">
-                            <li><Link href="/terms" className="text-muted-foreground hover:text-primary">Terms of Service</Link></li>
-                            <li><Link href="/privacy" className="text-muted-foreground hover:text-primary">Privacy Policy</Link></li>
-                            <li><Link href="/imprint" className="text-muted-foreground hover:text-primary">Imprint</Link></li>
-                        </ul>
-                    </div>
-
-                    <div>
                         <h3 className="font-bold text-lg mb-4">Connect</h3>
                         <ul className="space-y-2">
                             <li><Link href="https://twitter.com/ultravioletrs" target="_blank" className="text-muted-foreground hover:text-primary">Twitter</Link></li>
@@ -40,10 +40,36 @@ export function Footer() {
                             <li><Link href="mailto:info@ultraviolet.rs" className="text-muted-foreground hover:text-primary">Contact Us</Link></li>
                         </ul>
                     </div>
+
+                    <div>
+                        <h3 className="font-bold text-lg mb-4">Newsletter</h3>
+                        <p className="text-muted-foreground mb-4">
+                            Stay updated with our latest developments.
+                        </p>
+                        <form className="flex flex-col space-y-2">
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                className="bg-background border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
+                                required
+                            />
+                            <button
+                                type="submit"
+                                className="bg-primary text-primary-foreground rounded-md px-3 py-2 font-medium hover:opacity-90 transition-opacity"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
-                <div className="mt-12 pt-8 border-t text-center text-muted-foreground">
+                <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4 text-muted-foreground">
                     <p>&copy; {new Date().getFullYear()} Ultraviolet. All rights reserved.</p>
+                    <div className="flex gap-6">
+                        <Link href="/terms" className="hover:text-primary">Terms of Service</Link>
+                        <Link href="/privacy" className="hover:text-primary">Privacy Policy</Link>
+                        <Link href="/imprint" className="hover:text-primary">Imprint</Link>
+                    </div>
                 </div>
             </div>
         </footer>

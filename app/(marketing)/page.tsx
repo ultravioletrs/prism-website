@@ -3,7 +3,6 @@ import { Partners } from '@/components/landing/Partners';
 import { Features } from '@/components/landing/Features';
 import { Pricing } from '@/components/landing/Pricing';
 import { About } from '@/components/landing/About';
-import { Architecture } from '@/components/landing/Architecture';
 import { HowItWorks } from '@/components/landing/HowItWorks';
 import { DetailedFeatures } from '@/components/landing/DetailedFeatures';
 import { UseCases } from '@/components/landing/UseCases';
@@ -21,7 +20,6 @@ export default function HomePage() {
 
       <Features />
 
-      <Architecture />
 
       <HowItWorks />
 
@@ -29,9 +27,9 @@ export default function HomePage() {
 
       <UseCases />
 
-      <FAQ />
-
       <Pricing />
+
+      <FAQ />
     </main>
   );
 }
