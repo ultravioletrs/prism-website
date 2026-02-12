@@ -13,7 +13,7 @@ export function Footer() {
                                 alt="Ultraviolet"
                                 width={160}
                                 height={40}
-                                className="h-10 w-auto invert dark:invert-0"
+                                className="h-10 w-auto dark:invert"
                             />
                         </Link>
                         <p className="text-muted-foreground">
