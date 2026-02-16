@@ -46,16 +46,16 @@ export function Footer() {
                         <p className="text-muted-foreground mb-4">
                             Stay updated with our latest developments.
                         </p>
-                        <form className="flex flex-col space-y-2">
+                        <form className="flex gap-2">
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="bg-background border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
+                                className="bg-background border rounded-md px-3 py-2 flex-1 focus:outline-none focus:ring-2 focus:ring-primary"
                                 required
                             />
                             <button
                                 type="submit"
-                                className="bg-primary text-primary-foreground rounded-md px-3 py-2 font-medium hover:opacity-90 transition-opacity"
+                                className="bg-primary text-primary-foreground rounded-md px-4 py-2 font-medium hover:opacity-90 transition-opacity"
                             >
                                 Subscribe
                             </button>

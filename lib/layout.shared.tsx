@@ -1,4 +1,5 @@
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import Image from 'next/image';
 
 // fill this with your actual GitHub info, for example:
 export const gitConfig = {
@@ -10,7 +11,15 @@ export const gitConfig = {
 export function baseOptions(): BaseLayoutProps {
   return {
     nav: {
-      title: 'Prism',
+      title: (
+        <Image
+          src="/img/Prism_logo.png"
+          alt="Prism AI"
+          width={144}
+          height={48}
+          className="h-10 w-auto invert dark:invert-0"
+        />
+      ),
     },
     githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
   };

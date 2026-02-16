@@ -31,7 +31,7 @@ export function Navbar() {
                         <Link href="/docs" className="text-sm font-medium transition-colors hover:text-primary">
                             DOCUMENTATION
                         </Link>
-                        <Link href="https://medium.com/ultraviolet-blog" target="_blank" className="text-sm font-medium transition-colors hover:text-primary">
+                        <Link href="https://www.ultraviolet.rs/blog/?category=prism+ai" target="_blank" className="text-sm font-medium transition-colors hover:text-primary">
                             BLOG
                         </Link>
                         <Link href="https://github.com/ultravioletrs/cocos" target="_blank" className="text-muted-foreground hover:text-foreground">
@@ -76,7 +76,7 @@ export function Navbar() {
                             <Link href="/docs" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
                                 DOCUMENTATION
                             </Link>
-                            <Link href="https://medium.com/ultraviolet-blog" target="_blank" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
+                            <Link href="https://www.ultraviolet.rs/blog/?category=prism+ai" target="_blank" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
                                 BLOG
                             </Link>
                             <Link
