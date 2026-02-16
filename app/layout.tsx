@@ -18,6 +18,17 @@ const sen = Sen({
   variable: '--font-sen',
 });
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  icons: {
+    icon: [
+      { url: '/icon-light.png', media: '(prefers-color-scheme: light)' },
+      { url: '/icon-dark.svg', media: '(prefers-color-scheme: dark)' },
+    ],
+  },
+};
+
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable} ${sen.variable}`} suppressHydrationWarning>
