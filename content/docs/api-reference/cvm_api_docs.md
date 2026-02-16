@@ -4,7 +4,7 @@ title: "CVMs"
 
 # CVMs
 
-:::note Base URL
+:::note[Base URL]
 `https://prism.ultraviolet.rs/backends`
 :::
 

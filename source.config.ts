@@ -16,8 +16,11 @@ export const docs = defineDocs({
   },
 });
 
+import { remarkAdmonitions } from '@/lib/remark-admonitions';
+import remarkDirective from 'remark-directive';
+
 export default defineConfig({
   mdxOptions: {
-    // MDX options
+    remarkPlugins: [remarkDirective, remarkAdmonitions],
   },
 });

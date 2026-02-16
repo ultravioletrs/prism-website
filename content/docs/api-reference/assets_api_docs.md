@@ -4,7 +4,7 @@ title: "Assets"
 
 # Assets
 
-:::note Base URL
+:::note[Base URL]
 `https://prism.ultraviolet.rs/computations`
 :::
 

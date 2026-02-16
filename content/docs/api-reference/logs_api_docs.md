@@ -4,7 +4,7 @@ title: "Computation Logs"
 
 # Computation Logs
 
-:::note Base URL
+:::note[Base URL]
 `https://prism.ultraviolet.rs/computations`
 :::
 

@@ -4,7 +4,7 @@ title: "Computation Events"
 
 # Computation Events
 
-:::note Base URL
+:::note[Base URL]
 `https://prism.ultraviolet.rs/computations`
 :::
 

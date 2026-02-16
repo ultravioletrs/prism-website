@@ -4,7 +4,7 @@ title: "Certs"
 
 # Certs
 
-:::note Base URL
+:::note[Base URL]
 `https://prism.ultraviolet.rs/certs`
 :::
 

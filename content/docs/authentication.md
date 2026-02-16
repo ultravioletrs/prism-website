@@ -4,7 +4,7 @@ title: "Authentication & Workspaces"
 
 # Authentication & Workspaces
 
-:::note Base URL
+:::note[Base URL]
 `https://prism.ultraviolet.rs`
 :::
 
