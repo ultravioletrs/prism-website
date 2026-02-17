@@ -6,6 +6,13 @@ export const baseUrl =
 export function createMetadata(override: Metadata): Metadata {
     return {
         ...override,
+        icons: {
+            icon: [
+                { url: '/icon.png', sizes: 'any' },
+                { url: '/icon.svg', type: 'image/svg+xml' },
+            ],
+            apple: '/apple-icon.png',
+        },
         openGraph: {
             title: override.title ?? "Prism",
             description: override.description ?? "Prism - Secure Computation Platform",
