@@ -7,6 +7,16 @@ import { HowItWorks } from '@/components/landing/HowItWorks';
 import { DetailedFeatures } from '@/components/landing/DetailedFeatures';
 import { UseCases } from '@/components/landing/UseCases';
 import { FAQ } from '@/components/landing/FAQ';
+import { createMetadata } from '@/lib/metadata';
+
+export const metadata = createMetadata({
+  title: 'Prism | Secure Computation Platform',
+  description: 'Prism is a secure computation platform that allows you to run computations on sensitive data without exposing it.',
+  openGraph: {
+    title: 'Prism | Secure Computation Platform',
+    description: 'Prism is a secure computation platform that allows you to run computations on sensitive data without exposing it.',
+  },
+});
 
 export default function HomePage() {
   return (

@@ -1,7 +1,15 @@
-export const metadata = {
+import { createMetadata } from '@/lib/metadata';
+
+export const metadata = createMetadata({
     title: 'Imprint - Ultraviolet',
     description: 'Imprint and Legal Information for Ultraviolet',
-};
+    openGraph: {
+        images: ['/og/imprint'],
+    },
+    twitter: {
+        images: ['/og/imprint'],
+    },
+});
 
 export default function ImprintPage() {
     return (

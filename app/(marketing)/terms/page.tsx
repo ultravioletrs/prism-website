@@ -1,7 +1,15 @@
-export const metadata = {
+import { createMetadata } from '@/lib/metadata';
+
+export const metadata = createMetadata({
     title: 'Terms of Service - Ultraviolet',
     description: 'Terms of Service for Prism AI Platform',
-};
+    openGraph: {
+        images: ['/og/terms'],
+    },
+    twitter: {
+        images: ['/og/terms'],
+    },
+});
 
 export default function TermsPage() {
     return (

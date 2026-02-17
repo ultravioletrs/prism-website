@@ -1,7 +1,15 @@
-export const metadata = {
+import { createMetadata } from '@/lib/metadata';
+
+export const metadata = createMetadata({
     title: 'Privacy Policy - Ultraviolet',
     description: 'Privacy Policy for Prism AI Platform',
-};
+    openGraph: {
+        images: ['/og/privacy'],
+    },
+    twitter: {
+        images: ['/og/privacy'],
+    },
+});
 
 export default function PrivacyPage() {
     return (

@@ -20,14 +20,16 @@ const sen = Sen({
 
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  icons: {
-    icon: [
-      { url: '/icon-light.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark.svg', media: '(prefers-color-scheme: dark)' },
-    ],
+import { createMetadata, baseUrl } from '@/lib/metadata';
+
+export const metadata: Metadata = createMetadata({
+  title: {
+    template: '%s | Prism',
+    default: 'Prism',
   },
-};
+  description: 'The secure computation platform for sensitive data.',
+  metadataBase: new URL(baseUrl),
+});
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
