@@ -19,7 +19,7 @@ export function createMetadata(override: Metadata): Metadata {
             url: baseUrl,
             images: [
                 {
-                    url: `${baseUrl}/image.png`,
+                    url: `${baseUrl}/og/prism`,
                     width: 1200,
                     height: 630,
                     alt: "Prism - Secure Computation Platform",
@@ -34,7 +34,7 @@ export function createMetadata(override: Metadata): Metadata {
             description: override.description ?? "Prism - Secure Computation Platform",
             images: [
                 {
-                    url: `${baseUrl}/image.png`,
+                    url: `${baseUrl}/og/prism`,
                     width: 1200,
                     height: 630,
                     alt: "Prism - Secure Computation Platform",
