@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Algorithms",
+    "content": "Algorithms",
+    "url": "/docs/algorithms",
+    "id": "/algorithms"
+  },
+  {
+    "title": "Prism API",
+    "content": "Prism API",
+    "url": "/docs/api-reference/api",
+    "id": "/api-reference/api"
+  },
+  {
+    "title": "Assets",
+    "content": "Assets",
+    "url": "/docs/api-reference/assets_api_docs",
+    "id": "/api-reference/assets_api_docs"
+  },
+  {
+    "title": "Certs",
+    "content": "Certs",
+    "url": "/docs/api-reference/certs_api_docs",
+    "id": "/api-reference/certs_api_docs"
+  },
+  {
+    "title": "Computations",
+    "content": "Computations",
+    "url": "/docs/api-reference/computations_api_docs",
+    "id": "/api-reference/computations_api_docs"
+  },
+  {
+    "title": "CVMs",
+    "content": "CVMs",
+    "url": "/docs/api-reference/cvm_api_docs",
+    "id": "/api-reference/cvm_api_docs"
+  },
+  {
+    "title": "Computation Events",
+    "content": "Computation Events",
+    "url": "/docs/api-reference/events_api_docs",
+    "id": "/api-reference/events_api_docs"
+  },
+  {
+    "title": "Computation Logs",
+    "content": "Computation Logs",
+    "url": "/docs/api-reference/logs_api_docs",
+    "id": "/api-reference/logs_api_docs"
+  },
+  {
+    "title": "Authentication & Workspaces",
+    "content": "Authentication & Workspaces",
+    "url": "/docs/authentication",
+    "id": "/authentication"
+  },
+  {
+    "title": "Billing",
+    "content": "Billing",
+    "url": "/docs/billing",
+    "id": "/billing"
+  },
+  {
+    "title": "Computation Assets Overview",
+    "content": "Computation Assets Overview",
+    "url": "/docs/computations/assets",
+    "id": "/computations/assets"
+  },
+  {
+    "title": "Computation Logging and Monitoring",
+    "content": "Computation Logging and Monitoring",
+    "url": "/docs/computations/computation-logs",
+    "id": "/computations/computation-logs"
+  },
+  {
+    "title": "Computations",
+    "content": "Computations",
+    "url": "/docs/computations/computations",
+    "id": "/computations/computations"
+  },
+  {
+    "title": "Roles",
+    "content": "Roles",
+    "url": "/docs/computations/roles",
+    "id": "/computations/roles"
+  },
+  {
+    "title": "Certs Service",
+    "content": "Certs Service",
+    "url": "/docs/cvms/certs",
+    "id": "/cvms/certs"
+  },
+  {
+    "title": "Confidential Virtual Machines (CVMs)",
+    "content": "Confidential Virtual Machines (CVMs)",
+    "url": "/docs/cvms/cvms",
+    "id": "/cvms/cvms"
+  },
+  {
+    "title": "Architecture",
+    "content": "Architecture",
+    "url": "/docs/getting-started/architecture",
+    "id": "/getting-started/architecture"
+  },
+  {
+    "title": "Getting Started with Prism",
+    "content": "Getting Started with Prism",
+    "url": "/docs/getting-started/getting-started",
+    "id": "/getting-started/getting-started"
+  },
+  {
+    "title": "Access Control",
+    "content": "Access Control",
+    "url": "/docs/user-management/access-control",
+    "id": "/user-management/access-control"
+  },
+  {
+    "title": "Dashboard",
+    "content": "Dashboard",
+    "url": "/docs/user-management/dashboard",
+    "id": "/user-management/dashboard"
+  },
+  {
+    "title": "Invitations",
+    "content": "Invitations",
+    "url": "/docs/user-management/invitations",
+    "id": "/user-management/invitations"
+  },
+  {
+    "title": "Users",
+    "content": "Users",
+    "url": "/docs/user-management/users",
+    "id": "/user-management/users"
+  },
+  {
+    "title": "Workspace Roles",
+    "content": "Workspace Roles",
+    "url": "/docs/user-management/workspace-roles",
+    "id": "/user-management/workspace-roles"
+  },
+  {
+    "title": "Workspaces",
+    "content": "Workspaces",
+    "url": "/docs/user-management/workspaces",
+    "id": "/user-management/workspaces"
+  }
+]
