@@ -1,3 +1,5 @@
+'use client';
+
 import Image, { StaticImageData } from 'next/image';
 import prismUi from '@/public/img/prism-ui.png';
 import policies from '@/public/img/policies.png';
@@ -7,6 +9,8 @@ import logs from '@/public/img/logs.png';
 import { cn } from '@/lib/utils';
 import { Check, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+
+import { useLeads } from '@/components/providers/LeadsProvider';
 
 interface FeatureSectionProps {
     title: string;
@@ -19,6 +23,9 @@ interface FeatureSectionProps {
 }
 
 function FeatureSection({ title, children, image, imageAlt, reversed = false, ctaText, ctaHref }: FeatureSectionProps) {
+    const { openDemoModal } = useLeads();
+    const isCloudLink = ctaHref === "https://cloud.prism.ultraviolet.rs";
+
     return (
         <div className={cn("py-20", reversed ? "bg-muted/30" : "bg-background")}>
             <div className="container px-4 md:px-6">
@@ -30,14 +37,24 @@ function FeatureSection({ title, children, image, imageAlt, reversed = false, ct
                         </div>
                         {ctaText && ctaHref && (
                             <div className="pt-4">
-                                <Link
-                                    href={ctaHref}
-                                    {...(ctaHref.startsWith('http') ? { target: "_blank" } : {})}
-                                    className="inline-flex items-center text-brand-secondary font-semibold hover:underline"
-                                >
-                                    {ctaText}
-                                    <ArrowRight className="ml-2 h-4 w-4" />
-                                </Link>
+                                {isCloudLink ? (
+                                    <button
+                                        onClick={openDemoModal}
+                                        className="inline-flex items-center text-brand-secondary font-semibold hover:underline cursor-pointer"
+                                    >
+                                        {ctaText}
+                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                    </button>
+                                ) : (
+                                    <Link
+                                        href={ctaHref}
+                                        {...(ctaHref.startsWith('http') ? { target: "_blank" } : {})}
+                                        className="inline-flex items-center text-brand-secondary font-semibold hover:underline"
+                                    >
+                                        {ctaText}
+                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                    </Link>
+                                )}
                             </div>
                         )}
                     </div>

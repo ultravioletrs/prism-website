@@ -1,7 +1,12 @@
+'use client';
+
 import Link from 'next/link';
 import { Check } from 'lucide-react';
+import { useLeads } from '@/components/providers/LeadsProvider';
 
 export function Pricing() {
+    const { openDemoModal } = useLeads();
+
     return (
         <section id="pricing" className="py-20 bg-muted/30">
             <div className="container px-4 md:px-6">
@@ -35,13 +40,12 @@ export function Pricing() {
                                 <span className="text-sm">Community support</span>
                             </li>
                         </ul>
-                        <Link
-                            href="https://cloud.prism.ultraviolet.rs"
-                            target="_blank"
-                            className="w-full inline-flex h-10 items-center justify-center rounded-md border border-primary text-primary hover:bg-primary hover:text-white transition-colors text-sm font-medium"
+                        <button
+                            onClick={openDemoModal}
+                            className="w-full inline-flex h-10 items-center justify-center rounded-md border border-primary text-primary hover:bg-primary hover:text-white transition-colors text-sm font-medium cursor-pointer"
                         >
                             Get Started
-                        </Link>
+                        </button>
                     </div>
 
                     {/* Enterprise Plan */}
