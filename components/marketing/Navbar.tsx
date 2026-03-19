@@ -6,15 +6,18 @@ import { useState } from 'react';
 import { Menu, X, Github } from 'lucide-react';
 import { ModeToggle } from '@/components/mode-toggle';
 
+import { useLeads } from '@/components/providers/LeadsProvider';
+
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const { openDemoModal } = useLeads();
 
     return (
         <>
             <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
                 <div className="container flex h-16 items-center justify-between px-4 md:px-6">
                     <Link href="/" className="flex items-center space-x-2">
-                        <Image src="/img/Prism_logo.png" alt="Prism AI" width={144} height={48} className="h-12 w-auto invert dark:invert-0" />
+                        <Image src="/img/Prism_logo.png" alt="Prism AI" width={144} height={48} className="h-12 w-auto dark:invert" />
                     </Link>
 
                     {/* Desktop Nav */}
@@ -38,13 +41,12 @@ export function Navbar() {
                             <Github className="h-5 w-5" />
                             <span className="sr-only">GitHub</span>
                         </Link>
-                        <Link
-                            href="https://cloud.prism.ultraviolet.rs"
-                            target="_blank"
-                            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                        <button
+                            onClick={openDemoModal}
+                            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring cursor-pointer"
                         >
                             Try Prism
-                        </Link>
+                        </button>
                         <ModeToggle />
                     </div>
 
@@ -79,14 +81,15 @@ export function Navbar() {
                             <Link href="https://www.ultraviolet.rs/blog/?category=prism+ai" target="_blank" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
                                 BLOG
                             </Link>
-                            <Link
-                                href="https://cloud.prism.ultraviolet.rs"
-                                target="_blank"
+                            <button
+                                onClick={() => {
+                                    setIsOpen(false);
+                                    openDemoModal();
+                                }}
                                 className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
-                                onClick={() => setIsOpen(false)}
                             >
                                 Try Prism
-                            </Link>
+                            </button>
                             <div className="flex justify-center pt-4">
                                 <ModeToggle />
                             </div>

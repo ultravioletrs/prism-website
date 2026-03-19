@@ -1,7 +1,12 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useLeads } from '@/components/providers/LeadsProvider';
 
 export function Footer() {
+    const { openDemoModal } = useLeads();
+
     return (
         <footer className="bg-muted/50 border-t py-12 text-sm">
             <div className="container px-4 md:px-6">
@@ -26,7 +31,14 @@ export function Footer() {
                         <ul className="space-y-2">
                             <li><Link href="/#features" className="text-muted-foreground hover:text-primary">Features</Link></li>
                             <li><Link href="/docs" className="text-muted-foreground hover:text-primary">Documentation</Link></li>
-                            <li><Link href="https://cloud.prism.ultraviolet.rs" className="text-muted-foreground hover:text-primary">Prism Cloud</Link></li>
+                            <li>
+                                <button
+                                    onClick={openDemoModal}
+                                    className="text-muted-foreground hover:text-primary cursor-pointer text-left"
+                                >
+                                    Prism Cloud
+                                </button>
+                            </li>
                             <li><Link href="https://github.com/ultravioletrs/cocos" className="text-muted-foreground hover:text-primary">Cocos AI (Open Source)</Link></li>
                         </ul>
                     </div>
