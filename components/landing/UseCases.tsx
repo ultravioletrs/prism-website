@@ -1,22 +1,30 @@
-import { Stethoscope, LineChart, Building2, Lock, Eye, Users } from 'lucide-react';
+import Link from 'next/link';
+import { Stethoscope, LineChart, Building2, BarChart3, ArrowRight } from 'lucide-react';
 
 export function UseCases() {
     const sectors = [
         {
             icon: Stethoscope,
             title: "Healthcare",
-            description: "Protect sensitive patient data and enable collaborative research. Securely share and analyze patient records, conduct research on medical data, and develop AI-driven healthcare solutions while maintaining data privacy."
+            description: "Protect sensitive patient data and enable collaborative research. Securely share and analyze patient records, conduct research on medical data, and develop AI-driven healthcare solutions while maintaining data privacy.",
+            href: "/use-cases/healthcare-research",
         },
         {
             icon: LineChart,
             title: "Finance",
-            description: "Enhance data security for financial institutions. Enable secure data sharing and collaborative financial analysis, risk assessments, and fraud detection models without exposing raw financial data."
+            description: "Enhance data security for financial institutions. Enable secure data sharing and collaborative financial analysis, risk assessments, and fraud detection models without exposing raw financial data.",
         },
         {
             icon: Building2,
             title: "Government",
-            description: "Ensure data security for critical government operations. Enable secure multi-party computation for collaborative analysis between departments and protect classified information."
-        }
+            description: "Ensure data security for critical government operations. Enable secure multi-party computation for collaborative analysis between departments and protect classified information.",
+        },
+        {
+            icon: BarChart3,
+            title: "Enterprise Analytics",
+            description: "Enable cross-company collaboration on benchmarking, supply chain optimization, and market intelligence. Industry consortiums conduct joint analysis while maintaining complete data confidentiality.",
+            href: "/use-cases/enterprise-analytics",
+        },
     ];
 
     const applications = [
@@ -41,16 +49,32 @@ export function UseCases() {
                 {/* Sectors */}
                 <div className="mb-20">
                     <h2 className="text-3xl font-bold tracking-tight text-center mb-16">Where Prism AI is Used</h2>
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {sectors.map((sector, index) => (
-                            <div key={index} className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl border border-border/50 hover:border-primary/50 transition-colors">
-                                <div className="p-3 bg-muted rounded-full">
-                                    <sector.icon className="h-8 w-8 text-primary" />
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {sectors.map((sector, index) => {
+                            const content = (
+                                <>
+                                    <div className="p-3 bg-muted rounded-full">
+                                        <sector.icon className="h-8 w-8 text-primary" />
+                                    </div>
+                                    <h3 className="font-bold text-xl">{sector.title}</h3>
+                                    <p className="text-muted-foreground text-sm leading-relaxed text-justify">{sector.description}</p>
+                                    {sector.href && (
+                                        <span className="inline-flex items-center text-sm font-medium text-primary">
+                                            Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                                        </span>
+                                    )}
+                                </>
+                            );
+                            return sector.href ? (
+                                <Link key={index} href={sector.href} className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl border border-border/50 hover:border-primary/50 transition-colors">
+                                    {content}
+                                </Link>
+                            ) : (
+                                <div key={index} className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl border border-border/50 hover:border-primary/50 transition-colors">
+                                    {content}
                                 </div>
-                                <h3 className="font-bold text-xl">{sector.title}</h3>
-                                <p className="text-muted-foreground text-sm leading-relaxed text-justify">{sector.description}</p>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
 
