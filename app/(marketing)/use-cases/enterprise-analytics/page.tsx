@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { createMetadata } from '@/lib/metadata';
 import { EnterpriseAnalyticsHero } from '@/components/use-cases/enterprise-analytics/Hero';
 import { Challenges } from '@/components/use-cases/enterprise-analytics/Challenges';
@@ -9,7 +10,7 @@ import { ROIMetrics } from '@/components/use-cases/enterprise-analytics/ROIMetri
 import { HowItWorksEnterprise } from '@/components/use-cases/enterprise-analytics/HowItWorksEnterprise';
 import { EnterpriseCTA } from '@/components/use-cases/enterprise-analytics/EnterpriseCTA';
 
-export const metadata = createMetadata({
+export const metadata: Metadata = createMetadata({
     title: 'Enterprise Analytics & Cross-Company Collaboration | Prism AI',
     description:
         'Turn competitive data into competitive advantage. Collaborate with industry peers on analytics, benchmarking, and market research—while keeping your data strictly confidential. The Kaggle for enterprise analytics.',
