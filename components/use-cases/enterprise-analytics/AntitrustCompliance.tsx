@@ -19,7 +19,7 @@ const comparisonRows = [
     {
         risk: 'De-anonymization',
         traditional: 'Advanced AI can reverse-engineer aggregated datasets to identify specific competitor strategies.',
-        prism: 'Differential privacy techniques and cryptographic guarantees mathematically preclude reverse-engineering of individual inputs.',
+        prism: 'Differential privacy techniques and hardware isolation make reverse-engineering of individual inputs significantly harder.',
     },
 ];
 
@@ -32,9 +32,8 @@ export function AntitrustCompliance() {
                         Antitrust &amp; Regulatory Compliance
                     </h2>
                     <p className="text-muted-foreground text-lg">
-                        In December 2024, the DOJ and FTC withdrew the 2000 Collaboration Guidelines.
-                        Prism AI&apos;s Privacy-Enhancing Technologies provide the most robust defense against
-                        allegations of anticompetitive information exchange.
+                        Regulatory scrutiny of data collaboration is increasing. Prism's architecture
+                        helps address concerns about anticompetitive information exchange.
                     </p>
                 </div>
 
@@ -47,10 +46,9 @@ export function AntitrustCompliance() {
                             <h3 className="font-bold text-lg">The Cortland Standard (2025)</h3>
                         </div>
                         <p className="text-muted-foreground text-sm leading-relaxed">
-                            The DOJ established a bright-line rule prohibiting companies from using
-                            third-party software that relies on non-public competitor data for pricing
-                            recommendations. PETs with TEEs act as cryptographic &ldquo;oblivious proxies&rdquo;
-                            that mathematically preclude any participant from accessing rival inputs.
+                            Regulatory guidance increasingly scrutinizes third-party software that uses
+                            competitor data. TEE-based platforms act as isolated environments where
+                            participants cannot access each other's raw inputs.
                         </p>
                     </div>
                     <div className="p-6 rounded-xl border border-border/50 bg-card">
@@ -61,10 +59,9 @@ export function AntitrustCompliance() {
                             <h3 className="font-bold text-lg">Pro-Competitive by Design</h3>
                         </div>
                         <p className="text-muted-foreground text-sm leading-relaxed">
-                            Because the cryptographic architecture mathematically precludes any
-                            participant from reverse-engineering rival inputs, PETs eliminate the
-                            mechanism for price signaling or tacit collusion&mdash;ensuring joint analytics
-                            serve a purely pro-competitive purpose.
+                            The architecture prevents participants from accessing each other's raw data,
+                            reducing the mechanism for price signaling or tacit collusion. Joint analytics
+                            can serve pro-competitive purposes.
                         </p>
                     </div>
                 </div>
@@ -77,7 +74,7 @@ export function AntitrustCompliance() {
                             <tr className="border-b border-border">
                                 <th className="text-left p-4 font-bold text-foreground">Antitrust Risk</th>
                                 <th className="text-left p-4 font-bold text-destructive">Traditional Approach</th>
-                                <th className="text-left p-4 font-bold text-primary">With Prism AI</th>
+                                <th className="text-left p-4 font-bold text-primary">With Prism</th>
                             </tr>
                         </thead>
                         <tbody>

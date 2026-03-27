@@ -36,8 +36,7 @@ export function HowItWorksEnterprise() {
                         Secure Multi-Party Collaboration Workflow
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                        A strictly orchestrated four-step process designed to maintain absolute data
-                        sovereignty throughout the entire analytics lifecycle.
+                        A four-step process designed to maintain data sovereignty throughout the analytics lifecycle.
                     </p>
                 </div>
 

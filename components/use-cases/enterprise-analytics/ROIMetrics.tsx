@@ -3,45 +3,45 @@ import { TrendingUp, Users, Heart, DollarSign, Gauge, Leaf } from 'lucide-react'
 const metrics = [
     {
         icon: TrendingUp,
-        value: '9%',
-        label: 'Revenue Growth',
-        description: 'Annual revenue increase driven by data monetization, co-creation of new services, and predictive market intelligence.',
-        source: 'Cross-industry average',
+        value: 'New',
+        label: 'Revenue Streams',
+        description: 'Data collaboration enables new services and insights that weren\'t possible when operating in isolation.',
+        source: 'Data monetization',
     },
     {
         icon: Gauge,
-        value: '14%',
-        label: 'Operational Productivity',
-        description: 'Increase in efficiency from automated data flows, elimination of redundant reporting, and streamlined cross-company workflows.',
-        source: 'Cross-industry average',
+        value: 'Faster',
+        label: 'Decision Making',
+        description: 'Access to broader datasets and shared analytics accelerates time-to-insight for strategic decisions.',
+        source: 'Operational efficiency',
     },
     {
         icon: Heart,
-        value: '15%',
-        label: 'Customer Satisfaction',
-        description: 'Improvement from enhanced personalization, predictive demand fulfillment preventing stockouts, and higher product quality.',
-        source: 'Cross-industry average',
+        value: 'Better',
+        label: 'Customer Experience',
+        description: 'Combined data enables more accurate demand forecasting, reducing stockouts and improving service.',
+        source: 'Customer satisfaction',
     },
     {
         icon: DollarSign,
-        value: '11%',
-        label: 'Cost Reduction',
-        description: 'Year-over-year reduction from optimized inventory management, reduced administrative overhead, and shared analytical resources.',
-        source: 'Cross-industry average',
+        value: 'Lower',
+        label: 'Administrative Overhead',
+        description: 'Eliminate manual data exchange processes, redundant reporting, and complex data sharing agreements.',
+        source: 'Cost reduction',
     },
     {
         icon: Users,
-        value: '4 mo',
-        label: 'Earlier Error Detection',
-        description: 'Critical manufacturing errors detected 4 months earlier. A potential 1.4M vehicle recall narrowed to just 14 vehicles.',
-        source: 'Automotive (Catena-X)',
+        value: 'Earlier',
+        label: 'Issue Detection',
+        description: 'Pooled quality data across supply chains enables faster identification of defects and narrower recall scope.',
+        source: 'Quality improvement',
     },
     {
         icon: Leaf,
-        value: '46%',
-        label: 'PCF Reduction',
-        description: 'Reduction in reported Product Carbon Footprint values using primary supplier data, with \u20AC10K saved per calculation.',
-        source: 'Manufacturing (Catena-X)',
+        value: 'Accurate',
+        label: 'ESG Reporting',
+        description: 'Calculate product carbon footprints using actual supplier data instead of industry averages.',
+        source: 'Sustainability',
     },
 ];
 
@@ -51,12 +51,11 @@ export function ROIMetrics() {
             <div className="container px-4 md:px-6">
                 <div className="mx-auto max-w-3xl text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight mb-4">
-                        ROI &amp; Business Value Metrics
+                        Business Value
                     </h2>
                     <p className="text-muted-foreground text-lg">
-                        Data-sharing mature organizations realize significant financial and operational advantages.
-                        The ROI of collaborative data platforms follows a non-linear trajectory&mdash;subsequent
-                        use cases deploy with minimal incremental cost.
+                        Benefits of collaborative data platforms. Once the infrastructure is established,
+                        additional use cases can be deployed with minimal incremental cost.
                     </p>
                 </div>
 
@@ -85,13 +84,11 @@ export function ROIMetrics() {
 
                 {/* Compounding Value Note */}
                 <div className="mt-16 max-w-3xl mx-auto p-6 rounded-xl border border-brand-secondary/30 bg-brand-secondary/5 text-center">
-                    <h3 className="font-bold text-lg mb-2">The Compounding Value of the Ecosystem</h3>
+                    <h3 className="font-bold text-lg mb-2">Compounding Value</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                        Once a supplier is onboarded for part quality tracking, the same secure infrastructure
-                        immediately supports Product Carbon Footprint exchange for ESG reporting, capacity
-                        forecasts for supply chain optimization, and more. Each additional use case deploys
-                        with minimal cost, creating an unbeatable competitive edge that isolated organizations
-                        cannot replicate.
+                        Once a partner is onboarded for one use case, the same secure infrastructure
+                        supports additional applications—quality tracking, ESG reporting, capacity forecasting,
+                        and more. Each additional use case leverages existing integrations.
                     </p>
                 </div>
             </div>

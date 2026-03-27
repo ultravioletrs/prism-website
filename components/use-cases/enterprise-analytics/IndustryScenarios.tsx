@@ -3,54 +3,54 @@ import { Car, FlaskConical, Zap, ShoppingCart } from 'lucide-react';
 const scenarios = [
     {
         icon: Car,
-        title: 'Automotive: Catena-X Network',
+        title: 'Automotive Supply Chain',
         industry: 'Automotive',
         description:
-            'Catena-X serves as a federated data ecosystem allowing the entire automotive value chain to exchange information securely while maintaining strict data sovereignty.',
+            'OEMs and suppliers collaborate on quality tracking, demand forecasting, and carbon footprint calculations without exposing proprietary production data to each other.',
         highlights: [
-            'Errors detected 4 months earlier than traditional methods',
-            'Potential 1.4M vehicle recall narrowed to just 14 vehicles',
-            '46% reduction in reported Product Carbon Footprint values',
-            '\u20AC10,000 saved per PCF calculation vs. manual audits',
+            'Pool quality data across the supply chain for earlier defect detection',
+            'Narrow recall scope by tracing issues to specific batches',
+            'Calculate product carbon footprints using actual supplier data',
+            'Maintain data sovereignty for each participant',
         ],
     },
     {
         icon: FlaskConical,
-        title: 'Pharma: MELLODDY Consortium',
+        title: 'Pharmaceutical Research',
         industry: 'Pharmaceutical',
         description:
-            'Ten competing pharmaceutical giants\u2014including AstraZeneca, Bayer, GSK, and Novartis\u2014collaboratively trained predictive AI models on 2.6 billion confidential data points and 21 million small molecules.',
+            'Competing pharma companies can train joint models on combined datasets for drug discovery and safety prediction, without exposing proprietary compound libraries.',
         highlights: [
-            'Raw data never left the firewalls of respective owners',
-            'Proprietary chemical structures never exposed to competitors',
-            'Global model outperformed any individual company\u2019s isolated models',
-            'Significant improvements in predicting pharmacokinetics and safety',
+            'Raw data stays within each company\'s firewall',
+            'Proprietary chemical structures remain confidential',
+            'Combined models benefit from larger training datasets',
+            'Hardware attestation verifies algorithm integrity',
         ],
     },
     {
         icon: Zap,
-        title: 'Energy: Gaia-X & Energy Data-X',
+        title: 'Energy Grid Coordination',
         industry: 'Energy',
         description:
-            'European sovereign data spaces facilitate real-time coordination between decentralized renewable energy generators, storage systems, and consumers for grid optimization.',
+            'Energy generators, storage operators, and grid managers coordinate capacity and demand without exposing operational details or pricing strategies.',
         highlights: [
-            'Real-time visibility into grid behavior via smart meter gateways',
-            'Aggregated EV fleet capacity for split-second discharge decisions',
-            'Digital twins for predictive maintenance on high-voltage transformers',
-            'Reduced need for auxiliary gas turbine startups',
+            'Aggregate capacity data for grid balancing',
+            'Coordinate EV fleet charging without exposing individual patterns',
+            'Predictive maintenance using pooled equipment data',
+            'Maintain competitive separation between participants',
         ],
     },
     {
         icon: ShoppingCart,
-        title: 'Retail & Technology Ecosystems',
+        title: 'Retail Analytics',
         industry: 'Retail',
         description:
-            'Retailers, logistics providers, and payment processors securely match customer conversion signals against ad exposure data across platforms to optimize marketing spend.',
+            'Retailers, logistics providers, and payment processors analyze customer patterns and optimize operations without exposing transaction-level data.',
         highlights: [
-            'Align ad spend with actual buyer intent across platforms',
-            'Halt campaigns targeting already-converted customers',
-            'Recapture millions in wasted advertising spend',
-            'Full GDPR and CCPA compliance maintained throughout',
+            'Match conversion signals across platforms privately',
+            'Optimize marketing spend using combined insights',
+            'Identify trends from pooled point-of-sale data',
+            'Maintain GDPR and CCPA compliance',
         ],
     },
 ];
@@ -64,8 +64,7 @@ export function IndustryScenarios() {
                         Industry-Specific Scenarios
                     </h2>
                     <p className="text-muted-foreground text-lg">
-                        Real-world consortiums driving transformative business value across
-                        automotive, pharmaceutical, energy, and retail sectors.
+                        How Prism enables cross-company collaboration across industries while protecting proprietary data.
                     </p>
                 </div>
 

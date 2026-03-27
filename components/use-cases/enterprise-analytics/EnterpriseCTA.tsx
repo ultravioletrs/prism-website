@@ -12,12 +12,11 @@ export function EnterpriseCTA() {
             <div className="container px-4 md:px-6">
                 <div className="max-w-4xl mx-auto text-center p-12 rounded-2xl border border-brand-secondary/30 bg-gradient-to-br from-brand-secondary/5 to-primary/5">
                     <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-                        Ready to Transform Your Data Into a Shared Advantage?
+                        Ready to Collaborate on Enterprise Analytics?
                     </h2>
                     <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                        Turn competitive data into competitive advantage&mdash;collaborate with industry peers,
-                        share analytics, keep your data confidential. Join the next generation of
-                        enterprise data ecosystems powered by Prism AI.
+                        Collaborate with industry peers on shared analytics while keeping your data confidential.
+                        Each participant retains full custody of their proprietary data.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button

@@ -5,7 +5,7 @@ const guarantees = [
         icon: Cpu,
         title: 'Trusted Execution Environments (TEEs)',
         description:
-            'Prism AI leverages Intel TDX and AMD SEV-SNP hardware-backed TEEs. Memory pages are encrypted using keys generated and managed entirely by the hardware processor. Even the hypervisor, host OS, and cloud provider hold zero access to these keys.',
+            'Prism leverages Intel TDX and AMD SEV-SNP hardware-backed TEEs. Memory is encrypted using keys managed by the hardware processor—not accessible to the hypervisor, host OS, or cloud provider.',
     },
     {
         icon: Fingerprint,
