@@ -1,10 +1,10 @@
 import { Fingerprint, Database, Brain, ShieldAlert } from 'lucide-react';
 
 const challenges = [
-    { icon: Fingerprint, title: 'De-identification Is a Myth', description: 'Advanced ML algorithms can cross-reference de-identified datasets with external databases to re-identify patients. Genomic sequences and MRI brain topology act as biological fingerprints\u2014stripping names changes nothing.' },
-    { icon: Database, title: 'Data Silos & Interoperability', description: 'Patient data is scattered across EHR systems, PACS, LIS, and clinical registries. Establishing Data Use Agreements across jurisdictions has historically delayed multi-center studies by years.' },
-    { icon: Brain, title: 'Algorithmic Bias & Domain Shift', description: 'Models trained at a single institution overfit to local demographics, scanners, and workflows. An AI trained on one MRI scanner brand can fail catastrophically on scans from another\u2014perpetuating healthcare disparities.' },
-    { icon: ShieldAlert, title: 'Cyberattack Surface', description: 'Healthcare suffers the highest breach costs of any industry\u2014$10.93M average per breach in 2023. Centralizing PHI into shared data lakes multiplies the attack surface and regulatory exposure.' },
+    { icon: Fingerprint, title: 'De-identification Has Limits', description: 'ML algorithms can cross-reference de-identified datasets with external data to re-identify patients. Genomic sequences and imaging data contain inherent identifiers that survive traditional anonymization.' },
+    { icon: Database, title: 'Data Silos & Interoperability', description: 'Patient data is scattered across EHR systems, PACS, LIS, and clinical registries. Establishing Data Use Agreements across jurisdictions often delays multi-center studies by months or years.' },
+    { icon: Brain, title: 'Algorithmic Bias & Domain Shift', description: 'Models trained at a single institution can overfit to local demographics, scanners, and workflows. Limited training data diversity can reduce model performance on different patient populations.' },
+    { icon: ShieldAlert, title: 'Cyberattack Surface', description: 'Healthcare data breaches are costly and damaging. Centralizing PHI into shared data lakes creates high-value targets and increases regulatory exposure.' },
 ];
 
 export function Challenges() {
@@ -13,7 +13,7 @@ export function Challenges() {
             <div className="container px-4 md:px-6">
                 <div className="mx-auto max-w-3xl text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight mb-4">The Healthcare Data Dilemma</h2>
-                    <p className="text-muted-foreground text-lg">Robust healthcare AI demands vast, diverse datasets&mdash;yet sharing patient data is heavily regulated, technically risky, and operationally prohibitive. Prism AI eliminates this paradox.</p>
+                    <p className="text-muted-foreground text-lg">Healthcare AI requires diverse datasets, but sharing patient data is heavily regulated, technically risky, and operationally complex. Prism addresses these challenges.</p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {challenges.map((c, i) => (

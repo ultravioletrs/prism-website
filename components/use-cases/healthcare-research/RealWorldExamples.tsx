@@ -1,40 +1,40 @@
-import { Globe, FlaskConical, Pill } from 'lucide-react';
+import { Hospital, FlaskConical, Microscope } from 'lucide-react';
 
 const examples = [
     {
-        icon: Globe,
-        title: 'EXAM Study: COVID-19 Oxygen Prediction',
-        context: 'Multi-Center Clinical Trial',
-        description: 'During the COVID-19 pandemic, 20 institutions across North America, Europe, and Asia collaboratively trained an AI model to predict oxygen requirements of symptomatic patients. Not a single patient record crossed international borders.',
+        icon: Hospital,
+        title: 'Multi-Hospital Readmission Prediction',
+        context: 'What Prism Enables',
+        description: 'Regional hospital networks can collaboratively train readmission risk models across their combined patient populations. Each hospital retains full custody of patient records while contributing to a shared model that benefits all participants.',
         highlights: [
-            '20 institutions across 3 continents collaborated seamlessly',
-            'Multimodal data: CT images, radiology reports, clinical vitals',
-            'Global model achieved unprecedented accuracy and generalizability',
-            'Directly guided rapid treatment decisions and hospital resource allocation',
+            'Patient data never leaves hospital infrastructure',
+            'Combined model learns from diverse patient demographics',
+            'No Data Use Agreements required between participating hospitals',
+            'Each hospital can withdraw participation at any time',
         ],
     },
     {
-        icon: Pill,
-        title: 'MELLODDY: Federated Drug Discovery',
-        context: 'Pharmaceutical Consortium',
-        description: 'Ten competing pharmaceutical giants\u2014including AstraZeneca, Bayer, GSK, and Novartis\u2014collaboratively trained predictive models on 2.6 billion confidential data points and 21 million small molecules using federated learning with blockchain audit trails.',
+        icon: Microscope,
+        title: 'Cross-Institutional Imaging Analysis',
+        context: 'What Prism Enables',
+        description: 'Research institutions can pool imaging data for diagnostic model training without centralizing sensitive scans. Prism coordinates model training across sites while MRI, CT, and X-ray data remains within each institution\'s secure environment.',
         highlights: [
-            'Raw data never left the firewalls of respective owners',
-            'Proprietary chemical structures never exposed to competitors',
-            'Global model outperformed any individual company\u2019s isolated models',
-            'Blockchain DLT ensured immutable audit trail of every model update',
+            'Models train on diverse scanner types and patient populations',
+            'Reduces bias from single-institution datasets',
+            'DICOM data stays behind hospital firewalls',
+            'Hardware attestation verifies algorithm integrity before training',
         ],
     },
     {
         icon: FlaskConical,
-        title: 'Multi-Center Breast Cancer Diagnostics',
-        context: 'Disease Research Collaboration',
-        description: 'A collaborative study that traditionally required up to six years of administrative negotiations for Data Use Agreements was executed in a fraction of the time using federated computation, allowing researchers to utilize contemporary, clinically relevant data.',
+        title: 'Pharma-Hospital Data Collaboration',
+        context: 'What Prism Enables',
+        description: 'Pharmaceutical companies can validate drug efficacy against real-world hospital outcomes without hospitals exposing patient records or pharma exposing proprietary compound data. Both parties contribute to shared analysis while protecting their sensitive assets.',
         highlights: [
-            'Eliminated years of DUA negotiation delays',
-            'Researchers worked with current, relevant clinical data',
-            'Federated model added only 6 minutes of overhead vs. local training',
-            'Full GDPR and HIPAA compliance maintained throughout',
+            'Hospitals retain patient data sovereignty',
+            'Pharma protects proprietary research data',
+            'Results computed in hardware-isolated enclaves',
+            'Audit trails document all computation without exposing inputs',
         ],
     },
 ];
@@ -44,8 +44,8 @@ export function RealWorldExamples() {
         <section className="py-20 bg-muted/30">
             <div className="container px-4 md:px-6">
                 <div className="mx-auto max-w-3xl text-center mb-16">
-                    <h2 className="text-3xl font-bold tracking-tight mb-4">Real-World Examples</h2>
-                    <p className="text-muted-foreground text-lg">Proven implementations demonstrating how privacy-preserving collaboration drives breakthrough clinical outcomes.</p>
+                    <h2 className="text-3xl font-bold tracking-tight mb-4">Healthcare Scenarios</h2>
+                    <p className="text-muted-foreground text-lg">How Prism enables collaborative healthcare AI while keeping sensitive data under institutional control.</p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {examples.map((ex, i) => (

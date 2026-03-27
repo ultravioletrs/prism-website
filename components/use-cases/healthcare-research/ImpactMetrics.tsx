@@ -1,12 +1,12 @@
 import { Clock, DollarSign, Target, ShieldCheck, TrendingUp, Activity } from 'lucide-react';
 
 const metrics = [
-    { icon: Clock, value: 'Days', label: 'Time-to-Research', description: 'Data acquisition and legal setup compressed from months/years to days. No DUAs or BAAs needed\u2014algorithms travel to the data.', compare: 'vs. months\u2013years traditionally' },
-    { icon: Target, value: '0.81', label: 'AUROC Parity', description: 'Federated models achieve 0.81 pooled AUROC across 1.4M+ participants\u2014statistically matching centralized models at 0.82.', compare: 'Privacy adds zero accuracy cost' },
-    { icon: Activity, value: '92%', label: 'Diagnostic Accuracy', description: 'Federated diagnostic models achieve 92% accuracy vs. 89% for centralized methods, thanks to exposure to wider structural heterogeneity.', compare: 'vs. 89% centralized' },
-    { icon: DollarSign, value: '$50\u2013100M', label: 'Pharma Cost Savings', description: 'Savings per successful drug asset through accelerated federated research, automated cohort matching, and reduced trial recruitment spend.', compare: 'Per drug development cycle' },
-    { icon: ShieldCheck, value: '$10.93M', label: 'Breach Cost Avoided', description: 'Average healthcare breach cost in 2023. Decentralized architecture eliminates the centralized PHI target\u2014even a compromised orchestrator yields only encrypted gradients.', compare: 'Per breach avoided' },
-    { icon: TrendingUp, value: '6 min', label: 'Computational Overhead', description: 'Maximum additional training time for federated models with full cryptographic protections vs. insecure local methods.', compare: 'Negligible performance cost' },
+    { icon: Clock, value: 'Days', label: 'Time-to-Research', description: 'Data acquisition and legal setup reduced from months to days. No DUAs or BAAs needed—algorithms travel to the data instead.', compare: 'vs. months traditionally' },
+    { icon: Target, value: 'Comparable', label: 'Model Accuracy', description: 'Privacy-preserving models can match centralized training accuracy. Data stays distributed while model quality remains competitive.', compare: 'No accuracy tradeoff' },
+    { icon: Activity, value: 'Broader', label: 'Training Diversity', description: 'Models trained across institutions see more patient demographics, scanner types, and clinical workflows than single-site datasets.', compare: 'More representative models' },
+    { icon: DollarSign, value: 'Reduced', label: 'Legal & Admin Costs', description: 'Skip months of Data Use Agreement negotiations. Institutions collaborate without the legal overhead of traditional data sharing.', compare: 'Streamlined partnerships' },
+    { icon: ShieldCheck, value: 'Lower', label: 'Breach Exposure', description: 'No centralized PHI repository to target. Patient data stays within institutional boundaries, reducing attack surface.', compare: 'Decentralized by design' },
+    { icon: TrendingUp, value: 'Minimal', label: 'Computational Overhead', description: 'Hardware-based encryption adds modest overhead compared to unprotected computation. TEEs handle encryption at the processor level.', compare: 'Acceptable performance cost' },
 ];
 
 export function ImpactMetrics() {
@@ -15,7 +15,7 @@ export function ImpactMetrics() {
             <div className="container px-4 md:px-6">
                 <div className="mx-auto max-w-3xl text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight mb-4">Impact Metrics</h2>
-                    <p className="text-muted-foreground text-lg">Quantifiable proof that privacy-preserving AI matches or exceeds centralized systems in accuracy while delivering transformative time and cost savings.</p>
+                    <p className="text-muted-foreground text-lg">Key benefits of privacy-preserving collaboration for healthcare AI development.</p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {metrics.map((m, i) => (
@@ -37,29 +37,29 @@ export function ImpactMetrics() {
                             <tr className="border-b border-border">
                                 <th className="text-left p-4 font-bold text-foreground">KPI</th>
                                 <th className="text-left p-4 font-bold text-destructive">Centralized</th>
-                                <th className="text-left p-4 font-bold text-primary">Prism AI</th>
+                                <th className="text-left p-4 font-bold text-primary">Prism</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr className="border-b border-border/50">
                                 <td className="p-4 font-semibold text-foreground">Data Acquisition</td>
                                 <td className="p-4 text-muted-foreground">Months to years (DUAs/BAAs)</td>
-                                <td className="p-4 text-muted-foreground">Days to weeks (data stays sovereign)</td>
+                                <td className="p-4 text-muted-foreground">Days to weeks (data stays in place)</td>
                             </tr>
                             <tr className="border-b border-border/50">
-                                <td className="p-4 font-semibold text-foreground">Diagnostic Accuracy</td>
-                                <td className="p-4 text-muted-foreground">Prone to bias and domain shift</td>
-                                <td className="p-4 text-muted-foreground">Robust across demographics and hardware</td>
+                                <td className="p-4 font-semibold text-foreground">Model Diversity</td>
+                                <td className="p-4 text-muted-foreground">Limited to single-institution data</td>
+                                <td className="p-4 text-muted-foreground">Trains across multiple institutions</td>
                             </tr>
                             <tr className="border-b border-border/50">
                                 <td className="p-4 font-semibold text-foreground">Security Risk</td>
-                                <td className="p-4 text-muted-foreground">Critical\u2014pooled PHI target ($10.93M avg. breach)</td>
-                                <td className="p-4 text-muted-foreground">Minimal\u2014natively HIPAA/GDPR/CCPA compliant</td>
+                                <td className="p-4 text-muted-foreground">Centralized PHI creates high-value target</td>
+                                <td className="p-4 text-muted-foreground">Data stays distributed, smaller attack surface</td>
                             </tr>
                             <tr className="border-b border-border/50">
-                                <td className="p-4 font-semibold text-foreground">Financial Cost</td>
-                                <td className="p-4 text-muted-foreground">High cloud storage and data egress costs</td>
-                                <td className="p-4 text-muted-foreground">Edge compute; $50\u2013100M savings per drug asset</td>
+                                <td className="p-4 font-semibold text-foreground">Legal Overhead</td>
+                                <td className="p-4 text-muted-foreground">Complex BAA negotiations per partner</td>
+                                <td className="p-4 text-muted-foreground">Simplified agreements, data never shared</td>
                             </tr>
                         </tbody>
                     </table>

@@ -19,7 +19,7 @@ export function HealthcareHero() {
                         Healthcare Research &<br className="hidden md:block" /><span className="text-brand-secondary">Patient Data Analytics</span>
                     </motion.h1>
                     <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="max-w-[850px] text-lg md:text-xl text-muted-foreground leading-relaxed">
-                        Enable the next generation of healthcare AI without compromising patient privacy&mdash;institutional collaboration at <strong>HIPAA compliance scale</strong>. Build breakthrough diagnostic models across hospitals, pharma, and research institutions while patient data never leaves its source.
+                        Train healthcare AI models across institutions without moving patient data. Prism enables hospitals, pharma, and research institutions to collaborate on <strong>HIPAA-compliant</strong> analytics while each party retains full custody of their sensitive records.
                     </motion.p>
                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="flex flex-col sm:flex-row gap-4 w-full justify-center">
                         <button onClick={openDemoModal} className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring cursor-pointer">Schedule a Demo<ArrowRight className="ml-2 h-4 w-4" /></button>
@@ -27,7 +27,7 @@ export function HealthcareHero() {
                     </motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.4 }} className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 text-left">
                         <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
-                            <Stethoscope className="h-10 w-10 text-primary mb-4" /><h3 className="font-bold text-lg mb-2">Multi-Hospital Collaboration</h3><p className="text-muted-foreground text-sm">Hospitals collaboratively train AI models across patient populations without sharing raw records.</p>
+                            <Stethoscope className="h-10 w-10 text-primary mb-4" /><h3 className="font-bold text-lg mb-2">Multi-Hospital Collaboration</h3><p className="text-muted-foreground text-sm">Train AI models across patient populations without sharing raw records between institutions.</p>
                         </div>
                         <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
                             <ShieldCheck className="h-10 w-10 text-primary mb-4" /><h3 className="font-bold text-lg mb-2">Natively HIPAA Compliant</h3><p className="text-muted-foreground text-sm">Patient data never leaves the hospital. No complex BAAs required for multi-party research.</p>

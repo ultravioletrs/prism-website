@@ -1,12 +1,12 @@
 import { Cpu, Fingerprint, Code2, FileText, Layers, ShieldCheck } from 'lucide-react';
 
 const techItems = [
-    { icon: Cpu, title: 'Trusted Execution Environments (TEEs)', description: 'AMD SEV-SNP and Intel TDX hardware enclaves encrypt data at the processor level. Decryption keys reside strictly within the physical processor\u2014inaccessible to the hypervisor, host OS, cloud provider, and system administrators.' },
-    { icon: Fingerprint, title: 'Remote Attestation (aTLS)', description: 'Before any hospital shares model updates, the platform performs remote attestation generating an unforgeable cryptographic proof that the enclave runs the exact, untampered algorithm within genuine, secure hardware.' },
-    { icon: Code2, title: 'Open-Source HAL (Cocos AI)', description: 'Built on the open-source Cocos AI platform, the Hardware Abstraction Layer unifies deployment of encrypted Confidential VMs across public clouds, private data centers, and on-premise hospital servers\u2014fully auditable.' },
-    { icon: FileText, title: 'EHR Integration (FHIR / HL7)', description: 'Clinical APIs using FHIR and HL7 V2 standards allow in-enclave AI agents to securely query structured data (vitals, demographics) and unstructured physician notes directly from EHR systems like Epic and Oracle/Cerner.' },
-    { icon: Layers, title: 'DICOM Imaging Pipeline', description: 'An informatics gateway behind the hospital firewall intercepts DICOM streams from MRI/CT modalities, routes copies to the local encrypted AI node, and injects results back as DICOM Secondary Capture overlays or Structured Reports.' },
-    { icon: ShieldCheck, title: 'Privacy-Enhancing Technologies', description: 'Layered defenses: Differential Privacy injects calibrated noise to prevent membership inference, Homomorphic Encryption enables computation on ciphertexts, and Secure Multi-Party Computation distributes work so no party sees another\u2019s input.' },
+    { icon: Cpu, title: 'Trusted Execution Environments (TEEs)', description: 'AMD SEV-SNP and Intel TDX hardware enclaves encrypt data at the processor level. Decryption keys remain within the physical processor—not accessible to the hypervisor, host OS, or cloud provider.' },
+    { icon: Fingerprint, title: 'Remote Attestation (aTLS)', description: 'Before computation begins, remote attestation generates cryptographic proof that the enclave runs the expected algorithm on genuine secure hardware. Participants can verify before sharing data.' },
+    { icon: Code2, title: 'Open-Source Foundation (Cocos AI)', description: 'Built on the open-source Cocos AI platform for deploying Confidential VMs across public clouds, private data centers, and on-premise servers. The codebase is auditable.' },
+    { icon: FileText, title: 'EHR Integration (FHIR / HL7)', description: 'Clinical APIs using FHIR and HL7 V2 standards allow secure queries to structured data (vitals, demographics) and unstructured notes from EHR systems within the enclave.' },
+    { icon: Layers, title: 'DICOM Imaging Pipeline', description: 'A gateway behind the hospital firewall routes DICOM streams from MRI/CT modalities to the local encrypted node, returning results as DICOM Secondary Capture overlays or Structured Reports.' },
+    { icon: ShieldCheck, title: 'Privacy-Enhancing Technologies', description: 'Supports Differential Privacy for statistical protection, and Secure Multi-Party Computation where multiple parties contribute inputs without exposing them to each other.' },
 ];
 
 export function TechnicalArchitecture() {
@@ -15,7 +15,7 @@ export function TechnicalArchitecture() {
             <div className="container px-4 md:px-6">
                 <div className="mx-auto max-w-3xl text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight mb-4">Technical Architecture for Healthcare</h2>
-                    <p className="text-muted-foreground text-lg">A zero-trust architecture that simultaneously facilitates complex neural network computations, integrates with legacy hospital IT systems, and provides cryptographic guarantees of absolute data privacy.</p>
+                    <p className="text-muted-foreground text-lg">How Prism integrates with hospital IT systems while keeping patient data protected through hardware-based security.</p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {techItems.map((item, i) => (
