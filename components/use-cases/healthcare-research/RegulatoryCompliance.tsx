@@ -52,7 +52,7 @@ export function RegulatoryCompliance() {
 						Regulatory Compliance Benefits
 					</h2>
 					<p className="text-muted-foreground text-lg">
-						How Prism's architecture simplifies compliance with healthcare data regulations by keeping patient data within institutional boundaries.
+						How Prism&apos;s architecture simplifies compliance with healthcare data regulations by keeping patient data within institutional boundaries.
 					</p>
 				</div>
 				<div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
