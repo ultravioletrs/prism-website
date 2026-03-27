@@ -32,7 +32,7 @@ export function AntitrustCompliance() {
                         Antitrust &amp; Regulatory Compliance
                     </h2>
                     <p className="text-muted-foreground text-lg">
-                        Regulatory scrutiny of data collaboration is increasing. Prism's architecture
+                        Regulatory scrutiny of data collaboration is increasing. Prism&apos;s architecture
                         helps address concerns about anticompetitive information exchange.
                     </p>
                 </div>
@@ -48,7 +48,7 @@ export function AntitrustCompliance() {
                         <p className="text-muted-foreground text-sm leading-relaxed">
                             Regulatory guidance increasingly scrutinizes third-party software that uses
                             competitor data. TEE-based platforms act as isolated environments where
-                            participants cannot access each other's raw inputs.
+                            participants cannot access each other&apos;s raw inputs.
                         </p>
                     </div>
                     <div className="p-6 rounded-xl border border-border/50 bg-card">
@@ -59,7 +59,7 @@ export function AntitrustCompliance() {
                             <h3 className="font-bold text-lg">Pro-Competitive by Design</h3>
                         </div>
                         <p className="text-muted-foreground text-sm leading-relaxed">
-                            The architecture prevents participants from accessing each other's raw data,
+                            The architecture prevents participants from accessing each other&apos;s raw data,
                             reducing the mechanism for price signaling or tacit collusion. Joint analytics
                             can serve pro-competitive purposes.
                         </p>

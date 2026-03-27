@@ -79,7 +79,7 @@ export function EnterpriseAnalyticsHero() {
                         <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
                             <Shield className="h-10 w-10 text-primary mb-4" />
                             <h3 className="font-bold text-lg mb-2">Antitrust Compliant</h3>
-                            <p className="text-muted-foreground text-sm">Hardware-enforced isolation prevents participants from accessing each other's raw data.</p>
+                            <p className="text-muted-foreground text-sm">Hardware-enforced isolation prevents participants from accessing each other&apos;s raw data.</p>
                         </div>
                         <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
                             <BarChart3 className="h-10 w-10 text-primary mb-4" />
