@@ -48,8 +48,7 @@ export function SecurityGuarantees() {
                         Security &amp; Confidentiality Guarantees
                     </h2>
                     <p className="text-muted-foreground text-lg">
-                        Hardware-backed, mathematically verifiable security ensures absolute data
-                        sovereignty for every consortium participant.
+                        Hardware-backed security protects data sovereignty for every consortium participant.
                     </p>
                 </div>
 

@@ -21,9 +21,9 @@ const challenges = [
     },
     {
         icon: AlertTriangle,
-        title: 'Data Silos Bottleneck',
+        title: 'Data Silos Limit AI',
         description:
-            'AI and ML demand vast, diverse datasets to achieve high accuracy. Operating within a single organization\'s data boundaries is a critical bottleneck to innovation and competitive positioning.',
+            'ML models benefit from diverse datasets. Operating within a single organization\'s data limits the scope of analysis and model training.',
     },
 ];
 
@@ -36,9 +36,8 @@ export function Challenges() {
                         The Enterprise Data Collaboration Challenge
                     </h2>
                     <p className="text-muted-foreground text-lg">
-                        For decades, organizations faced a zero-sum choice: leverage external data
-                        for superior analytics, or protect proprietary assets from exposure.
-                        Prism AI resolves this tension.
+                        Organizations face a difficult choice: leverage external data for better analytics,
+                        or protect proprietary assets from exposure. Prism addresses this tradeoff.
                     </p>
                 </div>
 

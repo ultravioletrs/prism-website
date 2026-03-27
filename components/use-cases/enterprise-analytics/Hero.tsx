@@ -40,9 +40,8 @@ export function EnterpriseAnalyticsHero() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="max-w-[850px] text-lg md:text-xl text-muted-foreground leading-relaxed"
                     >
-                        Turn competitive data into competitive advantage—collaborate with industry peers,
-                        share analytics, keep your data confidential. The <strong>Kaggle for enterprise analytics</strong>,
-                        powered by confidential computing and privacy-enhancing technologies.
+                        Collaborate with industry peers on shared analytics while keeping your data confidential.
+                        Prism enables cross-company computation where each participant retains full custody of their proprietary data.
                     </motion.p>
 
                     <motion.div
@@ -80,12 +79,12 @@ export function EnterpriseAnalyticsHero() {
                         <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
                             <Shield className="h-10 w-10 text-primary mb-4" />
                             <h3 className="font-bold text-lg mb-2">Antitrust Compliant</h3>
-                            <p className="text-muted-foreground text-sm">Cryptographic guarantees eliminate the mechanism for price signaling or tacit collusion.</p>
+                            <p className="text-muted-foreground text-sm">Hardware-enforced isolation prevents participants from accessing each other's raw data.</p>
                         </div>
                         <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
                             <BarChart3 className="h-10 w-10 text-primary mb-4" />
-                            <h3 className="font-bold text-lg mb-2">Measurable ROI</h3>
-                            <p className="text-muted-foreground text-sm">Up to 9% revenue increase and 11% cost reduction through collaborative data ecosystems.</p>
+                            <h3 className="font-bold text-lg mb-2">Shared Insights</h3>
+                            <p className="text-muted-foreground text-sm">Derive insights from combined datasets that no single organization could produce alone.</p>
                         </div>
                     </motion.div>
                 </div>

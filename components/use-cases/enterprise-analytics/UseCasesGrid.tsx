@@ -1,12 +1,12 @@
 import { LineChart, Truck, Building2, Search, Leaf, Package } from 'lucide-react';
 
 const useCases = [
-    { icon: LineChart, title: 'Industry Benchmarking', description: 'Companies in the same industry collaborate on performance metrics, efficiency analysis, and market trends. The secure enclave computes industry averages, percentiles, and efficiency frontiers\u2014individual company data is never exposed.', benefit: 'Real-time, accurate benchmarks without third-party consultants' },
-    { icon: Truck, title: 'Supply Chain Optimization', description: 'Suppliers and manufacturers collaborate on demand forecasting, logistics optimization, and capacity management. Securely pool inventory levels, shipping times, and demand signals to train predictive AI models.', benefit: '10\u201330% reduction in downstream finished goods inventory' },
-    { icon: Building2, title: 'Consortium Analytics', description: 'Industry consortiums in automotive, retail, energy, and finance conduct joint analysis without antitrust concerns. Financial institutions pool transaction data for fraud detection and AML models with superior accuracy.', benefit: 'Cross-institutional AI models with no PII exposure' },
-    { icon: Search, title: 'Market Intelligence', description: 'Competitors securely combine point-of-sale data, loyalty metrics, and demographic trends within a TEE. The output identifies emerging consumer trends and shifting demands\u2014without exposing specific sales volumes or pricing.', benefit: 'Real-time predictive market intelligence' },
-    { icon: Leaf, title: 'ESG Reporting', description: 'Suppliers securely input primary energy and production data into an encrypted enclave to compute precise Product Carbon Footprints. Only the certified carbon metric is output\u2014operational secrets stay protected.', benefit: '46% reduction in reported PCF vs. industry averages' },
-    { icon: Package, title: 'Competitive Product Analysis', description: 'Securely pool warranty claims, field failure data, and customer sentiment across an industry. AI identifies systemic component failures and shifting preferences without sharing proprietary engineering data.', benefit: 'Proactive product quality improvement' },
+    { icon: LineChart, title: 'Industry Benchmarking', description: 'Companies in the same industry collaborate on performance metrics and efficiency analysis. The secure enclave computes industry averages and percentiles—individual company data is never exposed.', benefit: 'Accurate benchmarks without exposing proprietary data' },
+    { icon: Truck, title: 'Supply Chain Optimization', description: 'Suppliers and manufacturers collaborate on demand forecasting and capacity management. Pool inventory levels, shipping times, and demand signals to train predictive models.', benefit: 'Better forecasting from combined datasets' },
+    { icon: Building2, title: 'Consortium Analytics', description: 'Industry consortiums conduct joint analysis without exposing member data. Financial institutions can pool transaction patterns for fraud detection while keeping individual records private.', benefit: 'Cross-institutional models without data sharing' },
+    { icon: Search, title: 'Market Intelligence', description: 'Companies combine point-of-sale data, loyalty metrics, and demographic trends within a TEE. Output identifies consumer trends without exposing specific sales volumes or pricing.', benefit: 'Market insights from pooled data' },
+    { icon: Leaf, title: 'ESG Reporting', description: 'Suppliers input energy and production data into an encrypted enclave to compute Product Carbon Footprints. Only the certified metric is output—operational details stay protected.', benefit: 'Accurate carbon reporting with data privacy' },
+    { icon: Package, title: 'Product Quality Analysis', description: 'Pool warranty claims, field failure data, and customer feedback across an industry. Identify systemic issues and trends without sharing proprietary engineering data.', benefit: 'Industry-wide quality insights' },
 ];
 
 export function UseCasesGrid() {
@@ -15,7 +15,7 @@ export function UseCasesGrid() {
             <div className="container px-4 md:px-6">
                 <div className="mx-auto max-w-3xl text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight mb-4">High-Value Enterprise Use Cases</h2>
-                    <p className="text-muted-foreground text-lg">Confidential data consortiums enable unprecedented analytical depth across six primary enterprise scenarios&mdash;all powered by hardware-backed security.</p>
+                    <p className="text-muted-foreground text-lg">How enterprises use confidential computing to collaborate on analytics while protecting proprietary data.</p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {useCases.map((useCase, index) => (
