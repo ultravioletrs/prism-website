@@ -17,7 +17,7 @@ export function baseOptions(): BaseLayoutProps {
           alt="Prism AI"
           width={144}
           height={48}
-          className="h-10 w-auto dark:invert"
+          className="h-10 w-auto invert dark:invert-0"
         />
       ),
     },

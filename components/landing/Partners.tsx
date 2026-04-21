@@ -19,29 +19,77 @@ const partners = [
     { name: 'Linux Foundation', logo: '/img/logos/lf.png' },
 ];
 
-export function Partners() {
-    return (
-        <section className="py-16 bg-muted/30">
-            <div className="container px-4 md:px-6">
-                <div className="text-center mb-10">
-                    <h2 className="text-2xl font-bold tracking-tight">Trusted Partners</h2>
-                    <p className="text-muted-foreground mt-2">
-                        Collaborating with leading organizations in confidential computing and secure AI.
-                    </p>
-                </div>
+function TickerStrip({ items, speed, direction }: { items: any[], speed: number, direction: 'left' | 'right' }) {
+    const doubled = [...items, ...items];
+    const animationClass = direction === 'left' ? 'animate-ticker-scroll-left' : 'animate-ticker-scroll-right';
 
-                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-80 hover:opacity-100 transition-opacity duration-300">
-                    {partners.map((partner) => (
-                        <div key={partner.name} className="flex items-center justify-center p-4 h-20 w-32 md:w-40 transition-all duration-300 dark:bg-white/90 dark:rounded-2xl dark:shadow-lg dark:m-1">
+    return (
+        <div
+            className="flex overflow-hidden group w-full"
+            style={{
+                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
+            }}
+        >
+            <div
+                className={`flex gap-3 w-max ${animationClass}`}
+                style={{ animationDuration: `${speed}s` }}
+            >
+                {doubled.map((item, i) => (
+                    <div
+                        key={`${item.name}-${i}`}
+                        className="
+                            flex items-center gap-3 px-5 py-3 rounded-full
+                            border border-border/40
+                            bg-background/80 backdrop-blur-sm
+                            transition-all duration-300 cursor-default select-none
+                            hover:border-border hover:bg-accent/50
+                            dark:bg-white/[0.04] dark:border-white/10
+                            dark:hover:bg-white/[0.08] dark:hover:border-white/20
+                            shrink-0
+                        "
+                    >
+                        <div className="relative h-7 w-16 shrink-0">
                             <Image
-                                src={partner.logo}
-                                alt={`${partner.name} logo`}
-                                width={160}
-                                height={80}
-                                className="object-contain max-h-12 w-auto"
+                                src={item.logo}
+                                alt={item.name}
+                                fill
+                                className="object-contain dark:brightness-[1.2] dark:contrast-[1.05]"
                             />
                         </div>
-                    ))}
+                        <span className="text-sm font-medium text-foreground/70 whitespace-nowrap">
+                            {item.name}
+                        </span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export function Partners() {
+    return (
+        <section className="relative border-y bg-muted/10 overflow-hidden">
+            {/* Subtle background texture */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-50/20 to-transparent dark:via-indigo-950/10 pointer-events-none" />
+
+            {/* Partners */}
+            <div className="py-16 relative">
+                <div className="container mx-auto px-4 md:px-6 mb-10">
+                    <div className="text-center">
+                        <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-3">
+                            Trusted Partners
+                        </p>
+                        <h2 className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-indigo-600 dark:to-blue-400">
+                            Collaborating with leading organizations
+                        </h2>
+                        <p className="text-muted-foreground mt-2 text-sm">
+                            in confidential computing and secure AI.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="flex flex-col gap-4">
+                    <TickerStrip items={partners} speed={40} direction="left" />
                 </div>
             </div>
         </section>

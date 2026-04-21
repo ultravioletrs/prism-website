@@ -81,3 +81,21 @@
 #nd-page {
   max-width: none;
 }
+
+@keyframes ticker-scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes ticker-scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@utility animate-ticker-scroll-left {
+  animation: ticker-scroll-left linear infinite;
+}
+
+@utility animate-ticker-scroll-right {
+  animation: ticker-scroll-right linear infinite;
+}
