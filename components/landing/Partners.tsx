@@ -8,11 +8,11 @@ const partners = [
     { name: 'Telefónica', logo: '/img/logos/telefonica.png' },
     { name: 'VTT', logo: '/img/logos/vtt.png' },
     { name: 'Fujitsu', logo: '/img/logos/fujitsu.png' },
-    { name: 'Fraunhofer', logo: '/img/logos/fraunhofer.png' },
+    { name: 'Fraunhofer', logo: '/img/logos/fraunhofer.png', dropShadow: true },
     { name: 'TNO', logo: '/img/logos/tno.png' },
     { name: 'Ericsson', logo: '/img/logos/ericsson.png' },
     { name: 'Nokia', logo: '/img/logos/nokia.png' },
-    { name: 'Inserm', logo: '/img/logos/inserm.png' },
+    { name: 'Inserm', logo: '/img/logos/inserm.png', dropShadow: true },
     { name: 'TU Eindhoven', logo: '/img/logos/tue.png' },
     { name: 'Thales', logo: '/img/logos/thales.png' },
     { name: 'Imdea', logo: '/img/logos/imdea.svg' },
@@ -53,7 +53,10 @@ function TickerStrip({ items, speed, direction }: { items: any[], speed: number,
                                 src={item.logo}
                                 alt={item.name}
                                 fill
-                                className="object-contain dark:brightness-[1.2] dark:contrast-[1.05]"
+                                className={cn(
+                                    "object-contain dark:brightness-[1.2] dark:contrast-[1.05]",
+                                    item.dropShadow && "dark:drop-shadow-[0_0_3px_rgba(255,255,255,0.7)]"
+                                )}
                             />
                         </div>
                         <span className="text-sm font-medium text-foreground/70 whitespace-nowrap">
