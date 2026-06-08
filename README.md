@@ -1,3 +1,6 @@
+# ⚠️ ARCHIVED / MOVED ⚠️ 
+ All the content from this repo has been moved to the company website.
+
 # Prism Website
 
 This is the source code for the Prism Website, built with [Next.js](https://nextjs.org/) and [Fumadocs](https://fumadocs.dev/).
