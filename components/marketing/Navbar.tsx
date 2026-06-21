@@ -28,6 +28,9 @@ export function Navbar() {
                         <Link href="/#features" className="text-sm font-medium transition-colors hover:text-primary">
                             FEATURES
                         </Link>
+                        <Link href="/#use-cases" className="text-sm font-medium transition-colors hover:text-primary">
+                            USE CASES
+                        </Link>
                         <Link href="/#pricing" className="text-sm font-medium transition-colors hover:text-primary">
                             PRICING
                         </Link>
@@ -71,6 +74,9 @@ export function Navbar() {
                             </Link>
                             <Link href="/#features" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
                                 FEATURES
+                            </Link>
+                            <Link href="/#use-cases" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
+                                USE CASES
                             </Link>
                             <Link href="/#pricing" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
                                 PRICING
